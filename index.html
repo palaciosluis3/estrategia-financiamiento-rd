@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrategia de Financiamiento para el Desarrollo - República Dominicana</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config for fonts and styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            dominican: {
+              blue: '#002F6C',
+              red: '#CE1126',
+              gold: '#D4AF37',
+              navy: '#001B44',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom Style Sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Marked.js CDN for beautiful markdown parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="h-full bg-slate-50 text-slate-800 font-sans overflow-hidden flex flex-col md:flex-row">
+
+  <!-- LEFT PANEL: Sidebar -->
+  <aside
+    class="w-full md:w-[320px] bg-dominican-navy text-white flex flex-col flex-shrink-0 border-r border-slate-800 shadow-2xl relative z-20">
+
+    <!-- Sidebar Header & Flag -->
+    <div class="p-6 pb-4 flex flex-col gap-4">
+      <div class="flex items-center gap-3">
+        <!-- Dominican Flag SVG Badge -->
+        <img src="https://flagcdn.com/do.svg" alt="Bandera Dominicana"
+          class="w-10 h-7 object-cover rounded shadow-md border border-slate-700/30 flex-shrink-0">
+        <div>
+          <h1 class="font-display font-bold text-base tracking-tight leading-tight text-slate-100">Estrategia de
+            Financiamiento</h1>
+          <span class="text-[9px] font-semibold tracking-wider text-slate-400 uppercase">República Dominicana</span>
+        </div>
+      </div>
+      <div class="gold-divider"></div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="px-6 mb-4">
+      <label class="block text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">
+        Navegación Portal
+      </label>
+      <div class="flex flex-col gap-1.5">
+        <button id="tab-home"
+          class="w-full flex items-center gap-3 px-4 py-3 bg-slate-800 text-slate-100 rounded-lg font-semibold text-xs transition-all border border-slate-700/50">
+          <i data-lucide="home" class="w-4 h-4 text-dominican-gold"></i>
+          <span>Inicio EFD</span>
+        </button>
+        <button id="tab-assistant"
+          class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-slate-100 hover:bg-slate-800/40 rounded-lg font-semibold text-xs transition-all border border-transparent">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>Asistente de Consulta</span>
+        </button>
+        <button id="tab-notebook"
+          class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-slate-100 hover:bg-slate-800/40 rounded-lg font-semibold text-xs transition-all border border-transparent">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Guía NotebookLM</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Dataset Selector (Dropdown) -->
+    <div class="px-6 mb-6">
+      <label for="source-selector" class="block text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">
+        Fuente RAG Activa
+      </label>
+      <div class="relative">
+        <select id="source-selector"
+          class="w-full bg-slate-800/80 text-slate-100 border border-slate-700/80 rounded-lg py-3 pl-4 pr-10 text-xs font-semibold appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-dominican-gold/50 transition-all">
+          <option value="all">🇩🇴 Todo el documento (Compilado)</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Resumen Ejecutivo.md">📋 Resumen
+            Ejecutivo</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 1.md">📊 Cap. 1: Contexto
+            Económico y Financiero</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 2.md">📈 Cap. 2: Finanzas
+            Públicas Domésticas</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 3.md">🏛️ Cap. 3: Finanzas
+            Públicas Internacionales</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 4.md">💼 Cap. 4: Financiamiento
+            Privado Doméstico</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 5.md">🌎 Cap. 5: Financiamiento
+            Privado Internacional</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 6.md">🔧 Cap. 6: Instrumentos
+            Alternativos de Financiamiento</option>
+          <option value="Estrategia de financiamiento de Republica Dominicana - Capítulo 7.md">📋 Cap. 7: Gobernanza,
+            Monitoreo y Evaluación</option>
+        </select>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400">
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation / Info section -->
+    <div class="flex-grow px-6 overflow-y-auto custom-scrollbar space-y-4">
+      <div class="bg-slate-800/40 border border-slate-800/50 rounded-xl p-4 space-y-3">
+        <h3 class="text-xs font-bold text-slate-300 flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4 text-dominican-gold"></i>
+          Guía de Operación
+        </h3>
+        <p class="text-[10px] text-slate-400 leading-relaxed">
+          Este portal está conectado a la base de conocimientos oficial de la Estrategia de Financiamiento
+          para el Desarrollo de la República Dominicana. Las respuestas del modelo están limitadas estrictamente a los
+          documentos cargados para evitar alucinaciones.
+        </p>
+      </div>
+
+      <div class="bg-slate-800/40 border border-slate-800/50 rounded-xl p-4 space-y-3">
+        <h3 class="text-xs font-bold text-slate-300 flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+          Seguridad y Aislamiento
+        </h3>
+        <p class="text-[10px] text-slate-400 leading-relaxed">
+          Las credenciales de la API Key están aisladas de forma segura en nuestro servidor. Tus consultas son
+          procesadas bajo altos estándares de encriptación institucional.
+        </p>
+      </div>
+
+      <!-- Consultor / Creador del Portal -->
+      <div class="bg-slate-800/40 border border-slate-800/50 rounded-xl p-4 space-y-2">
+        <h3 class="text-xs font-bold text-slate-300 flex items-center gap-2">
+          <i data-lucide="user" class="w-4 h-4 text-dominican-gold"></i>
+          Creador del Portal
+        </h3>
+        <p class="text-[10px] text-slate-300 font-semibold leading-tight">
+          Luis Alberto Palacios
+        </p>
+        <p class="text-[9px] text-slate-400 leading-snug">
+          Consultor Experto de Naciones Unidas
+        </p>
+        <div class="flex items-center gap-1.5 mt-1">
+          <i data-lucide="mail" class="w-3 h-3 text-slate-500"></i>
+          <a href="mailto:lpalacios@hacienda.gov.do"
+            class="text-[9px] text-dominican-gold hover:underline transition-all">
+            lpalacios@hacienda.gov.do
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons Panel (CTA & Utilities) -->
+    <div class="p-6 mt-auto space-y-3 border-t border-slate-800/80 bg-slate-900/60 backdrop-blur-sm">
+      <!-- Download PDF Link -->
+      <a href="public/Estrategia de financiamiento RD.pdf" download id="download-pdf-btn"
+        class="w-full bg-dominican-gold text-slate-950 font-bold py-3.5 px-4 rounded-lg flex items-center justify-center gap-2 shadow-lg shadow-dominican-gold/10 hover:bg-yellow-500 hover:scale-[1.01] active:scale-95 transition-all text-xs">
+        <i data-lucide="file-down" class="w-4 h-4"></i>
+        <span>Descargar PDF Original</span>
+      </a>
+
+      <!-- Utility Actions (Clear & Download Text) -->
+      <div class="flex gap-2.5">
+        <!-- Clear Conversation Button -->
+        <button id="clear-chat-btn"
+          class="flex-1 flex flex-col items-center justify-center py-2.5 bg-slate-800/50 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 rounded-lg transition-all text-[10px] font-bold gap-1 group relative">
+          <i data-lucide="trash-2" class="w-4 h-4 text-slate-400 group-hover:text-dominican-red transition-colors"></i>
+          <span>Borrar Conversación</span>
+          <!-- Subtle confirmation indicator inside text -->
+          <span id="clear-confirm-text" class="hidden text-dominican-red">¿Confirmar?</span>
+        </button>
+
+        <!-- Download Chat History Button -->
+        <button id="export-history-btn"
+          class="flex-1 flex flex-col items-center justify-center py-2.5 bg-slate-800/50 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 rounded-lg transition-all text-[10px] font-bold gap-1">
+          <i data-lucide="download" class="w-4 h-4 text-slate-400"></i>
+          <span>Descargar Conversación</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- RIGHT PANEL: Main Chat Dashboard -->
+  <main class="flex-grow h-screen flex flex-col relative overflow-hidden bg-slate-50">
+
+    <!-- Top App Bar / Header -->
+    <header
+      class="h-16 flex justify-between items-center px-6 md:px-8 bg-white border-b border-slate-200/80 sticky top-0 z-10 shadow-sm">
+      <div class="flex items-center gap-3">
+        <span class="font-display font-bold text-slate-800 text-sm md:text-base">Herramienta de Consulta con
+          Inteligencia Artificial</span>
+        <div class="h-4 w-px bg-slate-200"></div>
+        <!-- Connection Status -->
+        <div class="flex items-center gap-2">
+          <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-indicator"></div>
+          <span class="text-xs font-semibold text-slate-500">Conectado (Gemini-3.1-Flash-Lite)</span>
+        </div>
+      </div>
+
+      <!-- Institutional Badges & User Meta -->
+      <div class="flex items-center gap-4">
+        <div
+          class="hidden lg:flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-100 text-[10px] font-bold uppercase tracking-wider">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+          <span>Sistema Activo</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- VIEW 1: Home/Landing Page -->
+    <div id="home-view" class="flex-grow overflow-y-auto p-6 md:p-8 custom-scrollbar bg-slate-50 space-y-8">
+
+      <!-- Top Welcoming Banner -->
+      <div
+        class="max-w-4xl mx-auto bg-gradient-to-r from-dominican-navy to-dominican-blue text-white p-8 rounded-2xl shadow-xl relative overflow-hidden message-fade-in">
+        <!-- Golden accent decorative circle -->
+        <div class="absolute -right-16 -top-16 w-44 h-44 rounded-full bg-dominican-gold/15 blur-2xl"></div>
+        <div class="absolute -left-16 -bottom-16 w-44 h-44 rounded-full bg-blue-500/10 blur-xl"></div>
+
+        <div class="relative space-y-4">
+          <span
+            class="px-3 py-1 bg-dominican-gold text-slate-900 rounded-full text-[10px] font-bold uppercase tracking-wider">Documento
+            Oficial</span>
+          <h2 class="font-display font-extrabold text-2xl md:text-3xl tracking-tight leading-tight max-w-2xl">
+            Estrategia de Financiamiento para el Desarrollo de la República Dominicana
+          </h2>
+          <p class="text-xs md:text-sm text-slate-200/90 leading-relaxed max-w-3xl">
+            La Estrategia de Financiamiento para el Desarrollo (EFD) constituye un documento integrador de amplio
+            espectro temático, que abarca desde las finanzas públicas domésticas hasta los mercados internacionales de
+            capital, pasando por los sistemas de cooperación, los instrumentos de financiamiento alternativo y la
+            arquitectura de gobernanza del propio proceso INFF.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bento-style Pillars of EFD -->
+      <div class="max-w-4xl mx-auto space-y-4">
+        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest pl-1">Estructura Analítica de la
+          Estrategia</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Chapter 1 Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- Front -->
+              <div class="flip-card-front p-6 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-dominican-blue"></div>
+                <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4 flex-shrink-0">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-dominican-blue"></i>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-800">1. Contexto Económico y Financiero</h4>
+                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                  Establece la línea base del entorno macroeconómico, financiero y de riesgos de la nación, ofreciendo
+                  un diagnóstico riguroso para sostener políticas de financiamiento.
+                </p>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back">
+                <h4 class="flip-card-back-title">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-dominican-gold"></i>
+                  Conceptos Clave
+                </h4>
+                <div class="concept-badges-grid custom-scrollbar">
+                  <span class="concept-badge">Crecimiento económico</span>
+                  <span class="concept-badge">PIB y estabilidad</span>
+                  <span class="concept-badge">Mercado laboral</span>
+                  <span class="concept-badge">Inflación</span>
+                  <span class="concept-badge">Estrategia de Desarrollo</span>
+                  <span class="concept-badge">Plan Plurianual</span>
+                  <span class="concept-badge">Marco Fiscal Mediano Plazo</span>
+                  <span class="concept-badge">Solvencia financiera</span>
+                  <span class="concept-badge">Supervisión bancaria</span>
+                  <span class="concept-badge">Riesgos para el desarrollo</span>
+                  <span class="concept-badge">Pasivos contingentes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 2 Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- Front -->
+              <div class="flip-card-front p-6 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-dominican-red"></div>
+                <div class="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center mb-4 flex-shrink-0">
+                  <i data-lucide="landmark" class="w-5 h-5 text-dominican-red"></i>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-800">2. Finanzas Públicas Domésticas</h4>
+                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                  Analiza la movilización y asignación de recursos públicos internos para elevar la eficiencia del gasto
+                  público y la integridad de la recaudación fiscal.
+                </p>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back">
+                <h4 class="flip-card-back-title">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-dominican-gold"></i>
+                  Conceptos Clave
+                </h4>
+                <div class="concept-badges-grid custom-scrollbar">
+                  <span class="concept-badge">Marco Gasto Mediano Plazo</span>
+                  <span class="concept-badge">Ingresos tributarios</span>
+                  <span class="concept-badge">Presión tributaria</span>
+                  <span class="concept-badge">Exenciones y Gasto fiscal</span>
+                  <span class="concept-badge">Espacio fiscal</span>
+                  <span class="concept-badge">Pacto Fiscal</span>
+                  <span class="concept-badge">Responsabilidad Fiscal</span>
+                  <span class="concept-badge">Déficit cuasi-fiscal eléctrico</span>
+                  <span class="concept-badge">Inversión SNIP</span>
+                  <span class="concept-badge">Flujos Ilícitos (FFI)</span>
+                  <span class="concept-badge">Evasión y BEPS / QDMTT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 3 Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- Front -->
+              <div class="flip-card-front p-6 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-dominican-gold"></div>
+                <div class="w-10 h-10 rounded-xl bg-yellow-50 flex items-center justify-center mb-4 flex-shrink-0">
+                  <i data-lucide="globe" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-800">3. Finanzas Públicas Internacionales</h4>
+                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                  Direcciona estratégicamente los recursos externos, la ayuda oficial y los fondos climáticos en
+                  mecanismos catalizadores de resiliencia y resguardo ambiental.
+                </p>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back">
+                <h4 class="flip-card-back-title">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-dominican-gold"></i>
+                  Conceptos Clave
+                </h4>
+                <div class="concept-badges-grid custom-scrollbar">
+                  <span class="concept-badge">SINACID y gobernanza</span>
+                  <span class="concept-badge">Ayuda Oficial al Desarrollo</span>
+                  <span class="concept-badge">Cooperación reembolsable</span>
+                  <span class="concept-badge">Financiamiento mixto</span>
+                  <span class="concept-badge">Cooperación Sur-Sur / CSSyT</span>
+                  <span class="concept-badge">Oferta Dominicana</span>
+                  <span class="concept-badge">Principios de Kampala y Busan</span>
+                  <span class="concept-badge">Financiamiento Climático</span>
+                  <span class="concept-badge">NDC y Taxonomía Verde</span>
+                  <span class="concept-badge">Bonos Soberanos Temáticos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 4 Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- Front -->
+              <div class="flip-card-front p-6 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center mb-4 flex-shrink-0">
+                  <i data-lucide="handshake" class="w-5 h-5 text-emerald-600"></i>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-800">4. Financiamiento Privado Doméstico</h4>
+                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                  Traza estrategias para movilizar el ahorro nacional, banca comercial y capitales previsionales hacia
+                  el sector productivo y obras sostenibles.
+                </p>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back">
+                <h4 class="flip-card-back-title">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-dominican-gold"></i>
+                  Conceptos Clave
+                </h4>
+                <div class="concept-badges-grid custom-scrollbar">
+                  <span class="concept-badge">Competitividad MIPYMES</span>
+                  <span class="concept-badge">Inclusión financiera</span>
+                  <span class="concept-badge">Bancarización y Factoring</span>
+                  <span class="concept-badge">Burocracia Cero</span>
+                  <span class="concept-badge">Profundización financiera</span>
+                  <span class="concept-badge">Mercado de valores local</span>
+                  <span class="concept-badge">Fondos previsionales y pensiones</span>
+                  <span class="concept-badge">Fideicomisos públicos</span>
+                  <span class="concept-badge">Alianzas Público-Privadas (APP)</span>
+                  <span class="concept-badge">Inversión de impacto y ESG</span>
+                  <span class="concept-badge">Taxonomía Verde local</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 5 Card -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <!-- Front -->
+              <div class="flip-card-front p-6 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-1 bg-indigo-500"></div>
+                <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center mb-4 flex-shrink-0">
+                  <i data-lucide="combine" class="w-5 h-5 text-indigo-600"></i>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-800">5. Financiamiento Privado Internacional</h4>
+                <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+                  Direcciona la inversión extranjera directa, créditos comerciales y remesas de la diáspora hacia el
+                  encadenamiento productivo y tecnológico nacional.
+                </p>
+              </div>
+              <!-- Back -->
+              <div class="flip-card-back">
+                <h4 class="flip-card-back-title">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-dominican-gold"></i>
+                  Conceptos Clave
+                </h4>
+                <div class="concept-badges-grid custom-scrollbar">
+                  <span class="concept-badge">Inversión Extranjera Directa (IED)</span>
+                  <span class="concept-badge">Encadenamiento productivo</span>
+                  <span class="concept-badge">Nearshoring y tecnología</span>
+                  <span class="concept-badge">Pilar Dos OCDE / QDMTT</span>
+                  <span class="concept-badge">Trade finance y exportaciones</span>
+                  <span class="concept-badge">Ventanilla Única (VUCE)</span>
+                  <span class="concept-badge">Finanzas de la diáspora</span>
+                  <span class="concept-badge">Remesas e inclusión familiar</span>
+                  <span class="concept-badge">Inversión de impacto global</span>
+                  <span class="concept-badge">Estándares ESG (ISSB / GRI)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chapter 6 Card -->
+          <div
+            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group h-[260px] flex flex-col justify-start">
+            <div class="absolute top-0 left-0 w-full h-1 bg-teal-500"></div>
+            <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-4 flex-shrink-0">
+              <i data-lucide="leaf" class="w-5 h-5 text-teal-600"></i>
+            </div>
+            <h4 class="font-display font-bold text-sm text-slate-800">6. Instrumentos Alternativos</h4>
+            <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
+              Diversifica los recursos del Estado con mecanismos innovadores no tradicionales (bonos azules,
+              catastróficos y canjes de deuda por naturaleza) respaldados por la CEPAL ante choques externos.
+            </p>
+          </div>
+
+          <!-- Chapter 7 Card (Horizontal Banner spanning all columns) -->
+          <div
+            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group md:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-start md:items-center gap-6 min-h-[140px] md:min-h-[120px]">
+            <div class="absolute top-0 left-0 w-full h-1 bg-slate-500"></div>
+
+            <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="settings" class="w-6 h-6 text-slate-600"></i>
+            </div>
+
+            <div class="flex-grow space-y-1">
+              <h4 class="font-display font-bold text-sm text-slate-800">7. Gobernanza, Monitoreo y Evaluación de la EFD
+              </h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Estructura el marco institucional, las instancias de coordinación política intersectorial
+                (público-privada) y los sistemas de seguimiento financiero requeridos para monitorear, evaluar y
+                retroalimentar de manera continua la ejecución de toda la estrategia, garantizando transparencia y
+                rendición de cuentas sistemática.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Core Strategy Metas / KPI panel -->
+      <div class="max-w-4xl mx-auto bg-white border border-slate-200/80 p-6 md:p-8 rounded-2xl shadow-sm space-y-6">
+        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+          <div>
+            <h3 class="font-display font-bold text-base text-slate-800">Contexto Macroeconómico</h3>
+            <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mt-0.5">Panorama macroeconómico
+              2025 - foto rápida</p>
+          </div>
+          <i data-lucide="bar-chart-2" class="w-5 h-5 text-slate-400"></i>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-slate-50 p-4 rounded-xl text-center space-y-1">
+            <span class="text-[12px] font-bold text-slate-400 uppercase tracking-widest block">PIB</span>
+            <span class="font-display font-extrabold text-3xl text-dominican-blue block">2.1%</span>
+            <span class="text-[10px] text-slate-500">Crecimiento real 2025</span>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-xl text-center space-y-1">
+            <span class="text-[12px] font-bold text-slate-400 uppercase tracking-widest block">Desempleo
+              Fija</span>
+            <span class="font-display font-extrabold text-3xl text-dominican-blue block">5.0%</span>
+            <span class="text-[10px] text-slate-500">Diciembre 2025</span>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-xl text-center space-y-1">
+            <span class="text-[12px] font-bold text-slate-400 uppercase tracking-widest block">Inflación</span>
+            <span class="font-display font-extrabold text-3xl text-dominican-blue block">&lt; 4.95%</span>
+            <span class="text-[10px] text-slate-500">Diciembre 2025</span>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-xl text-center space-y-1">
+            <span class="text-[12px] font-bold text-slate-400 uppercase tracking-widest block">Tasa de Política
+              Monetaria
+              (TPM)</span>
+            <span class="font-display font-extrabold text-3xl text-dominican-blue block">5.25%</span>
+            <span class="text-[10px] text-slate-500">Diciembre 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick RAG AI CTA banner -->
+      <div
+        class="max-w-4xl mx-auto bg-slate-900 text-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg shadow-slate-900/10">
+        <div class="space-y-1.5 text-center md:text-left">
+          <h4
+            class="font-display font-bold text-base text-slate-100 flex items-center justify-center md:justify-start gap-2">
+            <i data-lucide="sparkles" class="w-5 h-5 text-dominican-gold"></i>
+            Asistente RAG con IA Oficial Integrado
+          </h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+            Consulte de forma interactiva cualquier capítulo, artículo o recomendación técnica oficial sin riesgo de
+            alucinaciones usando el motor inteligente Gemini 3.1 Flash-Lite.
+          </p>
+        </div>
+        <button id="btn-start-chat"
+          class="px-5 py-3 bg-dominican-gold text-slate-950 font-bold text-xs rounded-xl shadow-md hover:scale-[1.02] active:scale-95 transition-all flex items-center gap-2 flex-shrink-0">
+          <span>Abrir Asistente AI</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- VIEW 2: Assistant / Chat Console -->
+    <div id="assistant-view" class="flex-grow flex flex-col relative overflow-hidden hidden">
+      <!-- Chat Message Log Container -->
+      <section id="chat-container"
+        class="flex-grow overflow-y-auto p-6 md:p-8 custom-scrollbar bg-slate-50/60 space-y-6">
+        <!-- Welcome Panel (Renders when conversation history is empty) -->
+        <div id="welcome-panel"
+          class="max-w-3xl mx-auto py-12 px-6 bg-white border border-slate-200/60 rounded-2xl shadow-xl shadow-slate-100/50 space-y-8 message-fade-in">
+          <div class="text-center space-y-3">
+            <div
+              class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-full flex items-center justify-center mx-auto shadow-md">
+              <i data-lucide="sparkles" class="w-7 h-7 text-dominican-gold"></i>
+            </div>
+            <h2 class="font-display font-extrabold text-2xl text-slate-800 tracking-tight">Asistente Técnico de la
+              Estrategia</h2>
+            <p class="text-xs text-slate-500 max-w-lg mx-auto leading-relaxed">
+              Realice consultas sobre los diagnósticos, cuellos de botella y recomendaciones técnicas oficiales de la
+              Estrategia de Financiamiento para el Desarrollo.
+            </p>
+          </div>
+
+          <div id="suggestions-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Se inyectan dinámicamente según la fuente activa en script.js -->
+          </div>
+        </div>
+
+        <!-- Dialogue logs will append here dynamically -->
+        <div id="chat-messages" class="max-w-4xl mx-auto space-y-6"></div>
+
+        <!-- Auto Scroll Anchor -->
+        <div id="scroll-anchor" class="h-4"></div>
+      </section>
+
+      <!-- Bottom Input Navigation Area -->
+      <div class="p-6 md:p-8 bg-gradient-to-t from-slate-50 via-slate-50 to-transparent border-t border-slate-200/40">
+        <div class="max-w-4xl mx-auto relative group">
+          <!-- Floating ambient blur highlight on focus -->
+          <div
+            class="absolute inset-0 bg-dominican-blue/5 rounded-2xl blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none">
+          </div>
+
+          <!-- Input Wrapper -->
+          <div
+            class="relative glass-input-wrapper bg-white border border-slate-300 rounded-2xl flex items-center p-2.5 shadow-lg shadow-slate-100">
+
+            <input type="text" id="chat-input"
+              class="flex-grow bg-transparent border-none outline-none focus:ring-0 px-3 font-medium text-slate-700 placeholder:text-slate-400 text-sm md:text-base leading-relaxed"
+              placeholder="Pregunte acerca de la Estrategia de Financiamiento para el Desarrollo..."
+              autocomplete="off" />
+
+            <!-- Send Button -->
+            <button id="send-btn"
+              class="bg-dominican-blue text-white p-3 rounded-xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all shadow-md hover:shadow-lg shadow-dominican-blue/20 hover:bg-slate-800">
+              <i data-lucide="send" class="w-5 h-5"></i>
+            </button>
+          </div>
+
+          <!-- Secondary decorative badges -->
+          <div
+            class="mt-3 flex flex-wrap justify-center gap-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest pointer-events-none">
+            <span class="flex items-center gap-1">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-500"></i>
+              Gemini 3.1 Flash-Lite Engine
+            </span>
+            <span class="hidden sm:inline-block">•</span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="database" class="w-3.5 h-3.5 text-dominican-gold"></i>
+              Búsqueda RAG Integrada
+            </span>
+            <span class="hidden sm:inline-block">•</span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-slate-400"></i>
+              Protección de API Key Servidor
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 3: NotebookLM Guide -->
+    <div id="notebook-view" class="flex-grow overflow-y-auto p-6 md:p-8 custom-scrollbar bg-slate-50 hidden space-y-8">
+
+      <!-- Header Banner -->
+      <div
+        class="max-w-4xl mx-auto bg-gradient-to-r from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden message-fade-in">
+        <div class="absolute -right-16 -top-16 w-44 h-44 rounded-full bg-dominican-gold/10 blur-2xl"></div>
+        <div class="relative space-y-4">
+          <span
+            class="px-3 py-1 bg-dominican-gold text-slate-950 rounded-full text-[10px] font-bold uppercase tracking-wider">Recurso
+            de Revisión Avanzada</span>
+          <h2 class="font-display font-extrabold text-2xl md:text-3xl tracking-tight leading-tight">
+            NotebookLM como Asistente de Consulta
+          </h2>
+          <p class="text-xs md:text-sm text-slate-300 leading-relaxed max-w-3xl">
+            Como recurso complementario al estudio de la Estrategia de Financiamiento para el Desarrollo (EFD),
+            recomendamos el uso de <strong>Google NotebookLM</strong>. Esta herramienta de inteligencia artificial
+            gratuita permite cargar documentos completos y realizar consultas avanzadas en lenguaje natural sobre toda
+            la base de conocimientos sin limitaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step-by-Step Interactive Guide -->
+      <div class="max-w-4xl mx-auto space-y-6">
+        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest pl-1">Guía Paso a Paso para el Usuario
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Step 1 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0 text-dominican-blue font-bold font-display text-sm">
+              1
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Acceso a la plataforma
+              </h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Ingrese a <a href="https://notebooklm.google.com" target="_blank"
+                  class="text-dominican-blue font-bold hover:underline">notebooklm.google.com</a> desde cualquier
+                navegador. La herramienta es totalmente gratuita y no requiere instalación alguna.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0 text-dominican-red font-bold font-display text-sm">
+              2
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Inicio de sesión</h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Inicie sesión utilizando su cuenta de Google (Gmail). Si no dispone de una cuenta, puede registrarse de
+                forma gratuita y rápida en la plataforma de Google.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-yellow-50 flex items-center justify-center flex-shrink-0 text-amber-600 font-bold font-display text-sm">
+              3
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Crear Nuevo Cuaderno
+              </h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                En la consola principal, presione el botón <strong>"+ Nuevo cuaderno"</strong> (o "+ New notebook" si se
+                encuentra en inglés) para inicializar su entorno de consulta interactivo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0 text-emerald-600 font-bold font-display text-sm">
+              4
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Cargar Archivos Markdown
+              </h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Haga clic en "Agregar fuentes" y arrastre todos los archivos Markdown de la estrategia (los cuales puede
+                descargar en el botón inferior). Cada archivo soporta hasta 500,000 palabras.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center flex-shrink-0 text-indigo-600 font-bold font-display text-sm">
+              5
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Interactuar y Preguntar
+              </h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Escriba consultas en lenguaje natural en el chat. NotebookLM responderá usando exclusivamente las
+                fuentes de la EFD, citando exactamente las secciones y capítulos consultados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div
+            class="bg-white border border-slate-200/80 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all flex gap-4">
+            <div
+              class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center flex-shrink-0 text-purple-600 font-bold font-display text-sm">
+              6
+            </div>
+            <div class="space-y-1">
+              <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wide">Filtros de Fuentes
+                Activas</h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">
+                Seleccione de manera manual cuáles capítulos o documentos específicos desea tener activos en el panel
+                lateral para focalizar o elevar la precisión de sus búsquedas avanzadas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Example Queries and Disclaimer Box -->
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm space-y-3 md:col-span-2">
+          <h4 class="font-display font-bold text-xs text-slate-800 uppercase tracking-wider flex items-center gap-2">
+            <i data-lucide="help-circle" class="w-4 h-4 text-dominican-blue"></i>
+            Preguntas Recomendadas para NotebookLM
+          </h4>
+          <ul class="text-[11px] text-slate-500 space-y-2 pl-4 list-disc leading-relaxed">
+            <li>¿Cuáles son las principales recomendaciones en materia de financiamiento verde y taxonomía nacional?
+            </li>
+            <li>¿Qué instituciones del sector público dominicano participan activamente en la gestión de la cooperación?
+            </li>
+            <li>¿Qué se entiende por estructuras de financiamiento mixto (blended finance) y qué rol tienen las APP?
+            </li>
+            <li>¿Cómo interactúa la baja presión tributaria con los retos de evasión y subsidio eléctrico en República
+              Dominicana?</li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-amber-50/50 border border-amber-200/60 p-6 rounded-2xl shadow-sm flex flex-col justify-between gap-4">
+          <div class="space-y-2">
+            <h4 class="font-display font-bold text-xs text-amber-800 uppercase tracking-wider flex items-center gap-2">
+              <i data-lucide="alert-circle" class="w-4.5 h-4.5 text-amber-600"></i>
+              Aviso Importante
+            </h4>
+            <p class="text-[10px] text-amber-700/95 leading-relaxed">
+              NotebookLM es un recurso complementario y no sustituye el estudio directo del documento oficial. Se
+              recomienda verificar los datos críticos y tablas en el PDF consolidado.
+            </p>
+          </div>
+          <a href="https://notebooklm.google.com" target="_blank"
+            class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-[10px] uppercase py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition-all">
+            <span>Ir a NotebookLM</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Download ZIP CTA Banner -->
+      <div
+        class="max-w-4xl mx-auto bg-slate-900 text-white p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg shadow-slate-900/10">
+        <div class="space-y-1.5 text-center md:text-left">
+          <h4
+            class="font-display font-bold text-base text-slate-100 flex items-center justify-center md:justify-start gap-2">
+            <i data-lucide="file-archive" class="w-5 h-5 text-dominican-gold"></i>
+            Descargar Base de Conocimientos EFD en Markdown
+          </h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+            Obtenga un paquete ZIP que contiene todos los capítulos oficiales en formato Markdown. Este archivo está
+            optimizado para ser subido directamente a su cuaderno en Google NotebookLM.
+          </p>
+        </div>
+        <a href="public/Capitulos_EFD_Markdown.zip" download
+          class="px-5 py-3 bg-dominican-gold text-slate-950 font-bold text-xs rounded-xl shadow-md hover:scale-[1.02] active:scale-95 transition-all flex items-center gap-2 flex-shrink-0">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Descargar Capítulos (ZIP)</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Frontend Logic Controller -->
+  <script src="script.js"></script>
+</body>
+
+</html>

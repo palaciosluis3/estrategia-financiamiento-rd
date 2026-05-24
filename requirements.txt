@@ -1,0 +1,5 @@
+fastapi
+mangum
+google-genai
+pydantic
+uvicorn
