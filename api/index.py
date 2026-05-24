@@ -188,10 +188,10 @@ async def chat(payload: ChatRequest):
             detail=f"Error en el servicio RAG de Gemini: {str(ge)}"
         )
 
-# Mount the /public folder for PDFs
-public_dir = os.path.join(BASE_DIR, "public")
-if os.path.exists(public_dir):
-    app.mount("/public", StaticFiles(directory=public_dir), name="public")
+# Mount the /downloads folder for PDFs and ZIPs
+downloads_dir = os.path.join(BASE_DIR, "downloads")
+if os.path.exists(downloads_dir):
+    app.mount("/downloads", StaticFiles(directory=downloads_dir), name="downloads")
     
 # Serve static assets (js, css, index.html) directly at root
 @app.get("/")
