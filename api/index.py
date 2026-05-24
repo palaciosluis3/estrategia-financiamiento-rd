@@ -3,6 +3,8 @@ import glob
 import logging
 from fastapi import FastAPI, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 from mangum import Mangum
@@ -186,26 +188,25 @@ async def chat(payload: ChatRequest):
             detail=f"Error en el servicio RAG de Gemini: {str(ge)}"
         )
 
+# Mount the /public folder for PDFs
+public_dir = os.path.join(BASE_DIR, "public")
+if os.path.exists(public_dir):
+    app.mount("/public", StaticFiles(directory=public_dir), name="public")
+    
+# Serve static assets (js, css, index.html) directly at root
+@app.get("/")
+async def read_index():
+    return FileResponse(os.path.join(BASE_DIR, "index.html"))
+    
+# Serve other static files in root directory
+app.mount("/", StaticFiles(directory=BASE_DIR), name="static")
+
 # Mangum handler wrapper for Vercel compatibility
 handler = Mangum(app)
 
 # Support running locally using native Python (w/o Vercel CLI / Node.js)
 if __name__ == "__main__":
     import uvicorn
-    from fastapi.staticfiles import StaticFiles
-    from fastapi.responses import FileResponse
-    
-    # Mount the /public folder for PDFs
-    public_dir = os.path.join(BASE_DIR, "public")
-    if os.path.exists(public_dir):
-        app.mount("/public", StaticFiles(directory=public_dir), name="public")
-        
-    # Serve static assets (js, css, index.html) directly at root
-    @app.get("/")
-    async def read_index():
-        return FileResponse(os.path.join(BASE_DIR, "index.html"))
-        
-    app.mount("/", StaticFiles(directory=BASE_DIR), name="static")
     
     logger.info("====================================================================")
     logger.info("  ESTRATEGIA DE FINANCIAMIENTO PARA EL DESARROLLO - INFF")
