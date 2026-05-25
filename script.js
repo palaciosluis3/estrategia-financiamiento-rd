@@ -356,6 +356,15 @@ window.prefillInput = function (text) {
   }
 };
 
+// Helper: Select a specific chapter in the dropdown and navigate to the assistant tab
+window.selectChapterAndNavigate = function (chapterFilename) {
+  if (sourceSelector) {
+    sourceSelector.value = chapterFilename;
+    sourceSelector.dispatchEvent(new Event('change'));
+  }
+  switchTab('assistant');
+};
+
 // Helper: Copy bot responses to clipboard with visual micro-feedback
 window.copyToClipboard = function (textBase64, btnElement) {
   try {

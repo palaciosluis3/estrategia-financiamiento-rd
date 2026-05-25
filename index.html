@@ -81,7 +81,7 @@
         <button id="tab-assistant"
           class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-slate-100 hover:bg-slate-800/40 rounded-lg font-semibold text-xs transition-all border border-transparent">
           <i data-lucide="message-square" class="w-4 h-4"></i>
-          <span>Asistente de Consulta</span>
+          <span>Asistente IA</span>
         </button>
         <button id="tab-notebook"
           class="w-full flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-slate-100 hover:bg-slate-800/40 rounded-lg font-semibold text-xs transition-all border border-transparent">
@@ -261,7 +261,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Chapter 1 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner">
+            <div class="flip-card-inner"
+              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 1.md')">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-blue"></div>
@@ -299,7 +300,8 @@
 
           <!-- Chapter 2 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner">
+            <div class="flip-card-inner"
+              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 2.md')">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-red"></div>
@@ -337,7 +339,8 @@
 
           <!-- Chapter 3 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner">
+            <div class="flip-card-inner"
+              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 3.md')">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-gold"></div>
@@ -374,7 +377,8 @@
 
           <!-- Chapter 4 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner">
+            <div class="flip-card-inner"
+              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 4.md')">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
@@ -412,7 +416,8 @@
 
           <!-- Chapter 5 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner">
+            <div class="flip-card-inner"
+              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 5.md')">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-indigo-500"></div>
@@ -449,7 +454,8 @@
 
           <!-- Chapter 6 Card -->
           <div
-            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group h-[260px] flex flex-col justify-start">
+            onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 6.md')"
+            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group h-[260px] flex flex-col justify-start cursor-pointer">
             <div class="absolute top-0 left-0 w-full h-1 bg-teal-500"></div>
             <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-4 flex-shrink-0">
               <i data-lucide="leaf" class="w-5 h-5 text-teal-600"></i>
@@ -463,7 +469,8 @@
 
           <!-- Chapter 7 Card (Horizontal Banner spanning all columns) -->
           <div
-            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group md:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-start md:items-center gap-6 min-h-[140px] md:min-h-[120px]">
+            onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 7.md')"
+            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group md:col-span-2 lg:col-span-3 flex flex-col md:flex-row items-start md:items-center gap-6 min-h-[140px] md:min-h-[120px] cursor-pointer">
             <div class="absolute top-0 left-0 w-full h-1 bg-slate-500"></div>
 
             <div class="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
@@ -542,7 +549,7 @@
         </div>
         <button id="btn-start-chat"
           class="px-5 py-3 bg-dominican-gold text-slate-950 font-bold text-xs rounded-xl shadow-md hover:scale-[1.02] active:scale-95 transition-all flex items-center gap-2 flex-shrink-0">
-          <span>Abrir Asistente AI</span>
+          <span>Abrir Asistente IA</span>
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </button>
       </div>
