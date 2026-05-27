@@ -159,24 +159,6 @@ El documento completo incluye:
 - El CORS está configurado para permitir todas las origins en desarrollo; ajustar para producción
 - Las solicitudes a la API están validadas mediante modelos Pydantic
 
-## 📝 Licencia
-
-[Información de licencia si aplica]
-
-## 👥 Contribución
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📞 Soporte
-
-Para preguntas o soporte técnico, por favor abre un issue en el repositorio.
-
 ---
 
 **Nota**: Este proyecto utiliza la API de Google Gemini. Asegúrate de revisar los términos de uso y límites de la API en [Google AI Studio](https://aistudio.google.com/).
