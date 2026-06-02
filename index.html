@@ -46,11 +46,14 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
-<body class="h-full bg-slate-50 text-slate-800 font-sans overflow-hidden flex flex-col md:flex-row">
+<body class="h-[100dvh] md:h-full bg-slate-50 text-slate-800 font-sans overflow-hidden flex flex-col md:flex-row">
+
+  <!-- Mobile Sidebar Backdrop Overlay -->
+  <div id="mobile-sidebar-backdrop" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-20 hidden transition-opacity duration-300 opacity-0"></div>
 
   <!-- LEFT PANEL: Sidebar -->
   <aside
-    class="w-full md:w-[320px] bg-dominican-navy text-white flex flex-col flex-shrink-0 border-r border-slate-800 shadow-2xl relative z-20">
+    class="fixed inset-y-0 left-0 w-[280px] md:w-[320px] bg-dominican-navy text-white flex flex-col flex-shrink-0 border-r border-slate-800 shadow-2xl z-30 transform -translate-x-full md:transform-none transition-transform duration-300 ease-in-out md:static md:translate-x-0">
 
     <!-- Sidebar Header & Flag -->
     <div class="p-6 pb-4 flex flex-col gap-4">
@@ -65,14 +68,20 @@
           </div>
         </div>
         
-        <!-- Language Switch toggle -->
-        <div class="lang-switch-container">
-          <input type="checkbox" id="lang-toggle-checkbox" class="hidden">
-          <label for="lang-toggle-checkbox" class="lang-switch-label">
-            <span id="lang-label-es" class="lang-label-es active">ES</span>
-            <span id="lang-label-en" class="lang-label-en">EN</span>
-            <span class="lang-switch-slider"></span>
-          </label>
+        <!-- Language Switch & Close Button Container -->
+        <div class="flex items-center gap-2">
+          <div class="lang-switch-container">
+            <input type="checkbox" id="lang-toggle-checkbox" class="hidden">
+            <label for="lang-toggle-checkbox" class="lang-switch-label">
+              <span id="lang-label-es" class="lang-label-es active">ES</span>
+              <span id="lang-label-en" class="lang-label-en">EN</span>
+              <span class="lang-switch-slider"></span>
+            </label>
+          </div>
+          <!-- Close button for mobile menu -->
+          <button id="mobile-sidebar-close" class="md:hidden p-1.5 hover:bg-slate-800/80 rounded-lg text-slate-400 hover:text-white transition-all flex items-center justify-center" title="Cerrar menú">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
         </div>
       </div>
       <div class="gold-divider"></div>
@@ -200,19 +209,23 @@
   </aside>
 
   <!-- RIGHT PANEL: Main Chat Dashboard -->
-  <main class="flex-grow h-screen flex flex-col relative overflow-hidden bg-slate-50">
+  <main class="flex-grow h-[100dvh] md:h-screen flex flex-col relative overflow-hidden bg-slate-50">
 
     <!-- Top App Bar / Header -->
     <header
-      class="h-16 flex justify-between items-center px-6 md:px-8 bg-white border-b border-slate-200/80 sticky top-0 z-10 shadow-sm">
-      <div class="flex items-center gap-3">
-        <span class="font-display font-bold text-slate-800 text-sm md:text-base" data-i18n="app_header_title">Herramienta de Consulta con
+      class="h-16 flex justify-between items-center px-4 md:px-8 bg-white border-b border-slate-200/80 sticky top-0 z-10 shadow-sm">
+      <div class="flex items-center gap-2.5 md:gap-3 overflow-hidden">
+        <!-- Menu toggle button for mobile -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 -ml-2 hover:bg-slate-100 rounded-lg text-slate-600 transition-all flex items-center justify-center" title="Abrir menú">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+        <span class="font-display font-bold text-slate-800 text-xs md:text-sm lg:text-base truncate" data-i18n="app_header_title">Herramienta de Consulta con
           Inteligencia Artificial</span>
-        <div class="h-4 w-px bg-slate-200"></div>
+        <div class="hidden sm:block h-4 w-px bg-slate-200 flex-shrink-0"></div>
         <!-- Connection Status -->
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 flex-shrink-0">
           <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-indicator"></div>
-          <span class="text-xs font-semibold text-slate-500" data-i18n="app_header_status">Conectado (Gemini-3.1-Flash-Lite)</span>
+          <span class="hidden sm:inline text-xs font-semibold text-slate-500" data-i18n="app_header_status">Conectado (Gemini-3.1-Flash-Lite)</span>
         </div>
       </div>
 
@@ -260,8 +273,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Chapter 1 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner"
-              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 1.md')">
+            <div class="flip-card-inner">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-blue"></div>
@@ -273,6 +285,11 @@
                   Establece la línea base del entorno macroeconómico, financiero y de riesgos de la nación, ofreciendo
                   un diagnóstico riguroso para sostener políticas de financiamiento.
                 </p>
+                <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-dominican-blue hover:text-blue-800 transition-colors"
+                     onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 1.md')">
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
               </div>
               <!-- Back -->
               <div class="flip-card-back">
@@ -293,14 +310,18 @@
                   <span class="concept-badge" data-i18n="home_c1_b10">Riesgos para el desarrollo</span>
                   <span class="concept-badge" data-i18n="home_c1_b11">Pasivos contingentes</span>
                 </div>
+                <button class="card-action-btn mt-3 w-full py-2 bg-dominican-gold text-slate-950 rounded-lg text-[10px] font-bold hover:bg-yellow-500 transition-all flex items-center justify-center gap-1 flex-shrink-0 shadow-md shadow-dominican-gold/10"
+                        onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 1.md')">
+                  <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                </button>
               </div>
             </div>
           </div>
 
           <!-- Chapter 2 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner"
-              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 2.md')">
+            <div class="flip-card-inner">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-red"></div>
@@ -312,6 +333,11 @@
                   Analiza la movilización y asignación de recursos públicos internos para elevar la eficiencia del gasto
                   público y la integridad de la recaudación fiscal.
                 </p>
+                <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-dominican-red hover:text-red-850 transition-colors"
+                     onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 2.md')">
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
               </div>
               <!-- Back -->
               <div class="flip-card-back">
@@ -332,14 +358,18 @@
                   <span class="concept-badge" data-i18n="home_c2_b10">Flujos Ilícitos (FFI)</span>
                   <span class="concept-badge" data-i18n="home_c2_b11">Evasión y BEPS / QDMTT</span>
                 </div>
+                <button class="card-action-btn mt-3 w-full py-2 bg-dominican-gold text-slate-950 rounded-lg text-[10px] font-bold hover:bg-yellow-500 transition-all flex items-center justify-center gap-1 flex-shrink-0 shadow-md shadow-dominican-gold/10"
+                        onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 2.md')">
+                  <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                </button>
               </div>
             </div>
           </div>
 
           <!-- Chapter 3 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner"
-              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 3.md')">
+            <div class="flip-card-inner">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-dominican-gold"></div>
@@ -351,6 +381,11 @@
                   Direcciona estratégicamente los recursos externos, la ayuda oficial y los fondos climáticos en
                   mecanismos catalizadores de resiliencia y resguardo ambiental.
                 </p>
+                <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-amber-600 hover:text-amber-800 transition-colors"
+                     onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 3.md')">
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
               </div>
               <!-- Back -->
               <div class="flip-card-back">
@@ -370,14 +405,18 @@
                   <span class="concept-badge" data-i18n="home_c3_b9">NDC y Taxonomía Verde</span>
                   <span class="concept-badge" data-i18n="home_c3_b10">Bonos Soberanos Temáticos</span>
                 </div>
+                <button class="card-action-btn mt-3 w-full py-2 bg-dominican-gold text-slate-950 rounded-lg text-[10px] font-bold hover:bg-yellow-500 transition-all flex items-center justify-center gap-1 flex-shrink-0 shadow-md shadow-dominican-gold/10"
+                        onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 3.md')">
+                  <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                </button>
               </div>
             </div>
           </div>
 
           <!-- Chapter 4 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner"
-              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 4.md')">
+            <div class="flip-card-inner">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500"></div>
@@ -389,6 +428,11 @@
                   Traza estrategias para movilizar el ahorro nacional, banca comercial y capitales previsionales hacia
                   el sector productivo y obras sostenibles.
                 </p>
+                <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-emerald-600 hover:text-emerald-800 transition-colors"
+                     onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 4.md')">
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
               </div>
               <!-- Back -->
               <div class="flip-card-back">
@@ -409,14 +453,18 @@
                   <span class="concept-badge" data-i18n="home_c4_b10">Inversión de impacto y ESG</span>
                   <span class="concept-badge" data-i18n="home_c4_b11">Taxonomía Verde local</span>
                 </div>
+                <button class="card-action-btn mt-3 w-full py-2 bg-dominican-gold text-slate-950 rounded-lg text-[10px] font-bold hover:bg-yellow-500 transition-all flex items-center justify-center gap-1 flex-shrink-0 shadow-md shadow-dominican-gold/10"
+                        onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 4.md')">
+                  <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                </button>
               </div>
             </div>
           </div>
 
           <!-- Chapter 5 Card -->
           <div class="flip-card">
-            <div class="flip-card-inner"
-              onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 5.md')">
+            <div class="flip-card-inner">
               <!-- Front -->
               <div class="flip-card-front p-6 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-full h-1 bg-indigo-500"></div>
@@ -428,6 +476,11 @@
                   Direcciona la inversión extranjera directa, créditos comerciales y remesas de la diáspora hacia el
                   encadenamiento productivo y tecnológico nacional.
                 </p>
+                <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
+                     onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 5.md')">
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </div>
               </div>
               <!-- Back -->
               <div class="flip-card-back">
@@ -447,14 +500,19 @@
                   <span class="concept-badge" data-i18n="home_c5_b9">Inversión de impacto global</span>
                   <span class="concept-badge" data-i18n="home_c5_b10">Estándares ESG (ISSB / GRI)</span>
                 </div>
+                <button class="card-action-btn mt-3 w-full py-2 bg-dominican-gold text-slate-950 rounded-lg text-[10px] font-bold hover:bg-yellow-500 transition-all flex items-center justify-center gap-1 flex-shrink-0 shadow-md shadow-dominican-gold/10"
+                        onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 5.md')">
+                  <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                  <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+                </button>
               </div>
             </div>
           </div>
 
           <!-- Chapter 6 Card -->
           <div
-            onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 6.md')"
-            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group h-[260px] flex flex-col justify-start cursor-pointer">
+            class="bg-white border border-slate-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md hover:scale-[1.01] transition-all relative overflow-hidden group h-[260px] flex flex-col justify-start cursor-pointer"
+            onclick="selectChapterAndNavigate('Estrategia de financiamiento de Republica Dominicana - Capítulo 6.md')">
             <div class="absolute top-0 left-0 w-full h-1 bg-teal-500"></div>
             <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center mb-4 flex-shrink-0">
               <i data-lucide="leaf" class="w-5 h-5 text-teal-600"></i>
@@ -464,6 +522,10 @@
               Diversifica los recursos del Estado con mecanismos innovadores no tradicionales (bonos azules,
               catastróficos y canjes de deuda por naturaleza) respaldados por la CEPAL ante choques externos.
             </p>
+            <div class="card-action-btn mt-auto pt-3 flex items-center justify-between text-[11px] font-bold text-teal-600 hover:text-teal-850 transition-colors">
+              <span data-i18n="card_btn_consult">Consultar Capítulo</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </div>
           </div>
 
           <!-- Chapter 7 Card (Horizontal Banner spanning all columns) -->
@@ -639,7 +701,7 @@
     <div id="mindmap-view" class="flex-grow flex flex-col relative overflow-hidden hidden bg-slate-50">
       
       <!-- Top controls panel -->
-      <div class="h-16 flex flex-wrap justify-between items-center px-6 md:px-8 bg-white border-b border-slate-200/80 sticky top-0 z-10 shadow-sm gap-4">
+      <div class="min-h-16 flex flex-col sm:flex-row justify-between items-center px-4 md:px-8 py-2.5 bg-white border-b border-slate-200/80 sticky top-0 z-10 shadow-sm gap-3">
         <div class="flex items-center gap-3">
           <span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="mindmap_active_label">Mapa Activo:</span>
           <div class="relative">
@@ -660,7 +722,7 @@
         </div>
 
         <!-- Float controls for Canvas Zoom/Expand -->
-        <div class="flex items-center gap-2">
+        <div class="flex flex-wrap items-center justify-center gap-2">
           <!-- Zoom out -->
           <button id="mindmap-zoom-out-btn" title="Alejar"
             class="p-2 hover:bg-slate-100 border border-slate-200 rounded-lg transition-all text-slate-600 flex items-center justify-center">
@@ -688,14 +750,14 @@
           <button id="mindmap-expand-all-btn"
             class="px-3 py-2 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg transition-all text-slate-700 text-xs font-bold flex items-center gap-1.5">
             <i data-lucide="unfold-horizontal" class="w-3.5 h-3.5"></i>
-            <span data-i18n="mindmap_expand_all">Expandir Todo</span>
+            <span data-i18n="mindmap_expand_all" class="hidden sm:inline">Expandir Todo</span>
           </button>
 
           <!-- Collapse All -->
           <button id="mindmap-collapse-all-btn"
             class="px-3 py-2 bg-slate-100 hover:bg-slate-200 border border-slate-300 rounded-lg transition-all text-slate-700 text-xs font-bold flex items-center gap-1.5">
             <i data-lucide="fold-horizontal" class="w-3.5 h-3.5"></i>
-            <span data-i18n="mindmap_collapse_all">Colapsar Todo</span>
+            <span data-i18n="mindmap_collapse_all" class="hidden sm:inline">Colapsar Todo</span>
           </button>
         </div>
       </div>

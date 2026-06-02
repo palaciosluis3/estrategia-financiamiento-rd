@@ -214,8 +214,9 @@ aside {
   cursor: pointer;
 }
 
-/* Flip state on hover */
-.flip-card:hover .flip-card-inner {
+/* Flip state on hover (desktop) or when toggled via JS class (mobile) */
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 

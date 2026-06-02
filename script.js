@@ -88,6 +88,7 @@ const translations = {
     guide_body: "Este portal es un prototipo y está conectado a la base de conocimientos oficial de la Estrategia de Financiamiento para el Desarrollo de la República Dominicana. Las respuestas del modelo están limitadas estrictamente a los documentos cargados para evitar alucinaciones. El portal usa un LLM básico por estar en etapa de prueba. Si desea hacer consultas más complejas sobre la Estrategia, se recomienda seguir las instrucciones para usar NotebookLM.",
     creator_title: "Creador del Portal",
     creator_role: "Consultor Experto de Naciones Unidas",
+    card_btn_consult: "Consultar Capítulo",
     btn_download_pdf: "Descargar PDF Original (Español)",
     btn_clear_chat: "Borrar Conversación",
     btn_clear_confirm: "¿Confirmar?",
@@ -245,6 +246,7 @@ const translations = {
     guide_body: "This portal is a prototype and is connected to the official knowledge base of the Development Financing Strategy of the Dominican Republic. Model answers are strictly limited to the loaded documents to prevent hallucinations. The portal uses a basic LLM as it is in the testing phase. If you wish to make more complex queries about the Strategy, it is recommended to follow the instructions for using NotebookLM.",
     creator_title: "Portal Creator",
     creator_role: "United Nations Expert Consultant",
+    card_btn_consult: "Query Chapter",
     btn_download_pdf: "Download Original PDF (In Spanish)",
     btn_clear_chat: "Clear Conversation",
     btn_clear_confirm: "Confirm?",
@@ -1025,6 +1027,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('preferredLanguage') || 'es';
   applyLanguage(savedLang);
 
+  // Bind Mobile Navigation Drawer events
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileSidebarClose = document.getElementById('mobile-sidebar-close');
+  const mobileSidebarBackdrop = document.getElementById('mobile-sidebar-backdrop');
+
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', openMobileSidebar);
+  }
+  if (mobileSidebarClose) {
+    mobileSidebarClose.addEventListener('click', closeMobileSidebar);
+  }
+  if (mobileSidebarBackdrop) {
+    mobileSidebarBackdrop.addEventListener('click', closeMobileSidebar);
+  }
+
+  // Bind Mobile Card Flip Click support
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // If clicked on any action button, don't flip
+      if (e.target.closest('.card-action-btn')) return;
+      card.classList.toggle('flipped');
+    });
+  });
+
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
@@ -1413,8 +1439,44 @@ function resetClearState() {
   clearChatBtn.classList.remove('border-dominican-red', 'bg-red-500/10');
 }
 
+// Drawer open/close controls for mobile
+function openMobileSidebar() {
+  const sidebar = document.querySelector('aside');
+  const backdrop = document.getElementById('mobile-sidebar-backdrop');
+  if (sidebar) {
+    sidebar.classList.remove('-translate-x-full');
+    sidebar.classList.add('translate-x-0');
+  }
+  if (backdrop) {
+    backdrop.classList.remove('hidden');
+    setTimeout(() => {
+      backdrop.classList.remove('opacity-0');
+      backdrop.classList.add('opacity-100');
+    }, 10);
+  }
+}
+
+function closeMobileSidebar() {
+  const sidebar = document.querySelector('aside');
+  const backdrop = document.getElementById('mobile-sidebar-backdrop');
+  if (sidebar) {
+    sidebar.classList.add('-translate-x-full');
+    sidebar.classList.remove('translate-x-0');
+  }
+  if (backdrop) {
+    backdrop.classList.remove('opacity-100');
+    backdrop.classList.add('opacity-0');
+    setTimeout(() => {
+      backdrop.classList.add('hidden');
+    }, 300);
+  }
+}
+
 // Tab Switching Controller (Home Landing vs RAG Assistant vs Mind Maps vs NotebookLM Guide)
 function switchTab(target) {
+  // Auto-close mobile navigation drawer on switch
+  closeMobileSidebar();
+
   if (target === 'home') {
     if (homeView) homeView.classList.remove('hidden');
     if (assistantView) assistantView.classList.add('hidden');
@@ -1820,6 +1882,7 @@ function collapseAllNodes() {
 
 // Drag to Scroll / Panning setup
 if (mindmapViewport) {
+  // Mouse-based drag panning
   mindmapViewport.addEventListener('mousedown', (e) => {
     if (e.button !== 0) return; // Only drag on left click
     if (e.target.closest('.mindmap-card') || e.target.closest('button') || e.target.closest('select')) return;
@@ -1850,6 +1913,32 @@ if (mindmapViewport) {
         mindmapViewport.style.cursor = 'grab';
       }
     }
+  });
+
+  // Touch-based drag panning for mobile/tablet devices
+  mindmapViewport.addEventListener('touchstart', (e) => {
+    if (e.target.closest('.mindmap-card') || e.target.closest('button') || e.target.closest('select')) return;
+    isDraggingMindmap = true;
+    const touch = e.touches[0];
+    startDragX = touch.pageX - mindmapViewport.offsetLeft;
+    startDragY = touch.pageY - mindmapViewport.offsetTop;
+    scrollLeftStart = mindmapViewport.scrollLeft;
+    scrollTopStart = mindmapViewport.scrollTop;
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!isDraggingMindmap) return;
+    const touch = e.touches[0];
+    const x = touch.pageX - mindmapViewport.offsetLeft;
+    const y = touch.pageY - mindmapViewport.offsetTop;
+    const walkX = (x - startDragX);
+    const walkY = (y - startDragY);
+    mindmapViewport.scrollLeft = scrollLeftStart - walkX;
+    mindmapViewport.scrollTop = scrollTopStart - walkY;
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    isDraggingMindmap = false;
   });
 }
 
