@@ -2,13 +2,13 @@
 
 ## 6 Instrumentos Alternativos de Financiamiento
 
-El Catálogo de Instrumentos Alternativos de Financiamiento para la República Dominicana es una herramienta habilitadora de la Estrategia de Financiamiento, orientada a diversificar y sofisticar las fuentes de recursos que requiere la agenda nacional. Estructurado como un portafolio de 23 mecanismos organizados según su función económica, el Catálogo ofrece al sector público y al privado un menú ordenado de soluciones para cerrar brechas en ámbitos críticos del desarrollo —infraestructura, salud, vivienda y energía— y para alinear los flujos de capital con las prioridades estratégicas del país.
+El Catálogo de Instrumentos Alternativos de Financiamiento es una herramienta habilitadora de la Estrategia de Financiamiento, orientada a diversificar y sofisticar las fuentes de recursos que requiere la agenda nacional. Estructurado como un portafolio de 23 mecanismos organizados según su función económica, el Catálogo ofrece al sector público y al privado un menú ordenado de soluciones para cerrar brechas en ámbitos críticos del desarrollo como infraestructura, salud, vivienda y energía, y para alinear los flujos de capital con las prioridades estratégicas del país.
 
-Este Capítulo es resumen ejecutivo del Catálogo, cuya elaboración contó con el respaldo técnico de la Comisión Económica para América Latina y el Caribe (CEPAL). Su propósito no es detallar la arquitectura técnica de cada instrumento —tarea que corresponde al documento principal— sino contextualizar al lector sobre la estructura general del portafolio y la lógica que los articula. Dado que dichos mecanismos están diseñados para movilizar recursos de diversas fuentes, sus aplicaciones son transversales a las dimensiones de financiamiento analizadas en los capítulos precedentes de la Estrategia.
+Este Capítulo es resumen ejecutivo del Catálogo, cuya elaboración contó con el respaldo técnico de la Comisión Económica para América Latina y el Caribe (CEPAL). Su propósito no es detallar la arquitectura técnica de cada instrumento, tarea que corresponde al documento principal, sino contextualizar al lector sobre la estructura general del portafolio y la lógica que los articula. Dado que dichos mecanismos están diseñados para movilizar recursos de diversas fuentes, sus aplicaciones son transversales a las dimensiones de financiamiento analizadas en los capítulos precedentes de la Estrategia.
 
 Surge como una necesidad de articular de manera coherente el capital privado, la cooperación internacional y los recursos fiscales para atender las brechas estructurales que condicionan la trayectoria hacia un desarrollo plenamente inclusivo y resiliente.
 
-Para orientar la elaboración de este catálogo, se desarrolló el Índice de Priorización Sectorial Integrado (IPSI), una herramienta técnica estratégica creada dentro del Marco Nacional Integrado de Financiamiento (INFF). Su metodología, inspirada en instrumentos del PNUD, la OCDE, el BID y la CAF, aplica un enfoque multicriterio ponderado que integra tres dimensiones: Impacto Socioeconómico (20%), Sostenibilidad y Resiliencia (20%) y Movilización y Apalancamiento Financiero (60%). Esta última dimensión —con el mayor peso— refleja el objetivo operativo del catálogo: identificar los sectores donde los mecanismos alternativos de financiamiento pueden avanzar con mayor claridad y velocidad. Cada sector fue calificado en una escala de 1 a 5 con base en evidencia de cuentas nacionales, carteras de inversión pública, análisis de vulnerabilidad climática y criterio técnico de expertos.
+Para orientar la elaboración de este catálogo, se desarrolló el Índice de Priorización Sectorial Integrado (IPSI), una herramienta técnica estratégica creada dentro del Marco Nacional Integrado de Financiamiento (INFF). Su metodología, inspirada en instrumentos del PNUD, la OCDE, el BID y la CAF, aplica un enfoque multicriterio ponderado que integra tres dimensiones: Impacto Socioeconómico (20%), Sostenibilidad y Resiliencia (20%) y Movilización y Apalancamiento Financiero (60%). Esta última dimensión refleja el objetivo operativo del catálogo: identificar los sectores donde los mecanismos alternativos de financiamiento pueden avanzar con mayor claridad y velocidad. Cada sector fue calificado en una escala de 1 a 5 con base en evidencia de cuentas nacionales, carteras de inversión pública, análisis de vulnerabilidad climática y criterio técnico de expertos.
 
 La canalización de capital hacia los sectores priorizados por el Catálogo se ve limitada por un conjunto de fricciones estructurales que el documento procura mitigar de forma explícita:
 
@@ -19,14 +19,13 @@ La canalización de capital hacia los sectores priorizados por el Catálogo se v
 
 Para facilitar su lectura estratégica, el Catálogo agrupa los instrumentos en cuatro familias funcionales, definidas según la naturaleza del problema que cada conjunto de soluciones aborda:
 
-- **Familia I. Financiamiento Temático (Use of Proceeds):** agrupa instrumentos cuyo rasgo definitorio es la afectación específica de los recursos a proyectos verdes o sociales verificables. Sobresalen los Bonos Etiquetados —con aplicación privilegiada en vivienda y energía—, las Líneas de Crédito Especializadas para MiPyMEs y los mecanismos de Factoring orientados a proveer liquidez a proveedores estratégicos.
-- **Familia II. Basados en Desempeño y Resultados:** reúne instrumentos cuyas condiciones financieras —la tasa de interés, los márgenes o los desembolsos— se ajustan contractualmente en función del cumplimiento de metas medibles. Integra los Bonos Vinculados a Sostenibilidad (SLB), los Préstamos Vinculados (SLL) y los Contratos de Desempeño Energético (ESCO).
+- **Familia I. Financiamiento Temático (Use of Proceeds):** agrupa instrumentos cuyo rasgo definitorio es la afectación específica de los recursos a proyectos verdes o sociales verificables. Destacan los Bonos Etiquetados,  las Líneas de Crédito Especializadas para MiPyMEs y los mecanismos de Factoring orientados a proveer liquidez a proveedores estratégicos.
+- **Familia II. Basados en Desempeño y Resultados:** reúne instrumentos cuyas condiciones financieras (la tasa de interés, los márgenes o los desembolsos) se ajustan contractualmente en función del cumplimiento de metas medibles. Integra los Bonos Vinculados a Sostenibilidad (SLB), los Préstamos Vinculados (SLL) y los Contratos de Desempeño Energético (ESCO).
 - **Familia III. Reducción de Riesgos y Gestión de Liquidez:** comprende mecanismos orientados a mejorar la bancabilidad de los proyectos y a asegurar disponibilidad inmediata de recursos ante eventos adversos. Comprende Garantías Parciales, Fondos de Primera Pérdida (First-loss), Seguros Paramétricos y Líneas Contingentes de desembolso rápido.
 - **Familia IV. Finanzas Mixtas y Estructuración Avanzada:** reúne soluciones de mayor sofisticación técnica y jurídica, concebidas para movilizar volúmenes significativos de capital institucional. Incluye la Titularización de activos, los Vehículos de Propósito Especial (SPV) y los Canjes de Deuda por Naturaleza.
 
 1. **Familia I: Financiamiento Temático (Use of Proceeds)**
-
-- 0.1. ***Bonos Etiquetados (Verdes, Sociales, Sostenibles, Azules y de Transición)***
+    - 1.1. ***Bonos Etiquetados (Verdes, Sociales, Sostenibles, Azules y de Transición)***
 
 Estos valores de deuda permiten canalizar capital de forma estratégica hacia proyectos con beneficios ambientales o sociales verificables, resolviendo la desalineación entre las prioridades nacionales de desarrollo y el financiamiento estructurado. Su arquitectura se basa en un marco de referencia que define el uso de fondos, la selección de proyectos y sistemas de reporte con verificación externa (SPO) para mitigar el riesgo de "lavado de imagen". En el país, este instrumento cuenta con un avance sólido gracias al Marco de Referencia Soberano de 2024, la Taxonomía Verde nacional y la experiencia previa en emisiones soberanas internacionales.
 
@@ -42,7 +41,7 @@ Este mecanismo ofrece soluciones de liquidez de corto plazo al adelantar el pago
 
 Se trata de un contrato donde el repago se determina como un porcentaje de los ingresos brutos futuros hasta un monto máximo, ideal para empresas con flujos variables que no desean diluir su capital. El flujo se gestiona mediante una cuenta recaudadora o pasarela de pagos que automatiza el cobro proporcional a las ventas reales. Este instrumento se ve potenciado en el país por la trazabilidad que ofrece la facturación electrónica y un ecosistema fintech en expansión capaz de procesar datos transaccionales de alta frecuencia.
 
-- 0.1. *Líneas de Crédito Verdes / Transición*
+- 0.1. ***Líneas de Crédito Verdes / Transición***
 
 Son facilidades crediticias fondeadas por capital mayorista para financiar carteras de subcréditos con beneficios ambientales, mitigando los altos costos y plazos cortos que suelen enfrentar las inversiones sostenibles. Su arquitectura requiere un sistema de gestión ambiental y social (ESMS) en los bancos y procesos de "tagging" contable para reportar el impacto del uso de los fondos. La disponibilidad de la Taxonomía Verde y los programas piloto de supervisión bancaria para riesgos ASG facilitan la implementación nacional de estas líneas por parte de la banca múltiple y BANDEX.
 
@@ -110,7 +109,7 @@ Es financiamiento soberano pre-aprobado que se desembolsa inmediatamente ante un
 
 - 0.1. ***Blended Finance para Preparación de Proyectos (Project Prep)***
 
-Facilidades que combinan donaciones y capital recuperable para financiar estudios técnicos y legales, cerrando el "vacío de bancabilidad" de proyectos complejos. Operan mediante ventanas que reembolsan los costos de estructuración al momento de la adjudicación o cierre financiero del proyecto. El marco de la Ley No. 47-20 de APP genera una demanda natural para estas facilidades de preparación en el país.
+Facilidades que combinan donaciones y capital recuperable para financiar estudios técnicos y legales, cerrando la "brecha de bancabilidad" de proyectos complejos. Operan mediante ventanas que reembolsan los costos de estructuración al momento de la adjudicación o cierre financiero del proyecto. El marco de la Ley No. 47-20 de APP genera una demanda natural para estas facilidades de preparación en el país.
 
 - 0.1. ***Titularización (Asset-backed)***
 
@@ -135,3 +134,7 @@ Con el objeto de asegurar una implementación ordenada y sostenible en el tiempo
 - **Largo Plazo (36+ meses):** concentrar esfuerzos en instrumentos de alta complejidad y negociación internacional prolongada, señaladamente los Canjes de Deuda por Naturaleza.
 
 La implementación efectiva del Catálogo descansa, en última instancia, sobre el fortalecimiento de la arquitectura de datos y de los sistemas de Medición, Reporte y Verificación (MRV). La transparencia y la trazabilidad de los resultados constituyen el habilitante transversal que permitirá al país consolidar un flujo recurrente de capital institucional y posicionarse, de manera sostenida, como destino competitivo de financiamiento para el desarrollo.
+
+## Referencias
+
+**Carvajal, I. y Guzman, S. (2026).** *Entregable II - Informe de Mecanismos Alternativos de Financiamiento.* Marco Nacional Integrado de Financiamiento (INFF). Apoyo de CEPAL.
