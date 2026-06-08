@@ -152,7 +152,7 @@
   - Non-intrusive inspection (X-rays)
   - Post-Clearance Audit
 
-### 5. STRATEGIC RECOMMENDATIONS
+### 5. STRATEGIC PROPOSALS
 - **Pillar I: Efficient Expenditure**
   - Electricity sector reform
   - Results-based financing
@@ -219,7 +219,7 @@
 - **Mechanisms:** Debt swaps, Parametric insurance
 - **Gap:** Need for US$ 23,719 million (NDC)
 
-### 7. STRATEGIC RECOMMENDATIONS
+### 7. STRATEGIC PROPOSALS
 - **Pillar I:** Integrated governance and SSyTC autonomy
 - **Pillar II:** Blending for pre-investment and RBF (Results-Based Financing)
 - **Pillar III:** Mutual reviews and shared indicators
@@ -321,7 +321,7 @@
   - Crowdfunding and Tokenization
   - Mandatory External ESG Audit
 
-### 5. STRATEGIC RECOMMENDATIONS
+### 5. STRATEGIC PROPOSALS
 - **Pillar I:** Productive financing for MSMEs
 - **Pillar II:** Deepening of the Capital Market
 - **Pillar III:** Consolidation of the institutional framework for PPP and Blended Finance
@@ -350,7 +350,7 @@
   - Specialized human capital gap
   - Territorial asymmetry in the Southwest macroregion
 
-- **Strategic Recommendations**
+- **Strategic Proposals**
   - Implement Pillar Two (Global Minimum Tax)
   - Binding performance agreements
   - Recovery mechanisms (Clawback)
@@ -416,7 +416,7 @@
   - Specialized window for impact capital
   - First-loss mechanisms
 
-### 5. STRATEGIC RECOMMENDATIONS
+### 5. STRATEGIC PROPOSALS
 - **Pillar I:** FDI Policy - Quality, linkages, and institutionality
 - **Pillar II:** Export competitiveness
 - **Pillar III:** Financial inclusion of the diaspora
@@ -509,7 +509,7 @@
 - Multi-stakeholder coordination
 - Monitoring resource mobilization
 - Evaluation of financial instruments
-- Generation of strategic recommendations
+- Generation of strategic proposals
 
 ### 3. MONITORING MODEL
 - **Dimension 1: Public financial execution**

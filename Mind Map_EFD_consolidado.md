@@ -152,7 +152,7 @@
   - Inspección no intrusiva (Rayos X)
   - Auditoría Posterior al Despacho
 
-### 5. RECOMENDACIONES ESTRATÉGICAS
+### 5. PROPUESTAS ESTRATÉGICAS
 - **Pilar I: Gasto Eficiente**
   - Reforma sector eléctrico
   - Financiación basada en resultados
@@ -219,7 +219,7 @@
 - **Mecanismos:** Canjes de deuda, Seguros paramétricos
 - **Brecha:** Necesidad de US$ 23,719 millones (NDC)
 
-### 7. RECOMENDACIONES ESTRATÉGICAS
+### 7. PROPUESTAS ESTRATÉGICAS
 - **Pilar I:** Gobernanza integrada y autonomía CSSyT
 - **Pilar II:** Blending para preinversión y FBR
 - **Pilar III:** Revisiones mutuas e indicadores compartidos
@@ -321,7 +321,7 @@
   - Crowdfunding y Tokenización
   - Auditoría Externa ESG Obligatoria
 
-### 5. RECOMENDACIONES ESTRATÉGICAS
+### 5. PROPUESTAS ESTRATÉGICAS
 - **Pilar I:** Financiamiento productivo para MIPYMES
 - **Pilar II:** Profundización del Mercado de Capitales
 - **Pilar III:** Consolidación del marco institucional de APP y Blended Finance
@@ -351,7 +351,7 @@
   - Brecha de capital humano especializado
   - Asimetría territorial en macrorregión Suroeste
 
-- **Recomendaciones Estratégicas**
+- **Propuestas Estratégicas**
   - Implementar Pilar Dos (Impuesto Mínimo Global)
   - Acuerdos de desempeño vinculantes
   - Mecanismos de recuperación (Clawback)
@@ -417,7 +417,7 @@
   - Ventanilla especializada de capital de impacto
   - Mecanismos de primera pérdida (First-loss)
 
-### 5. RECOMENDACIONES ESTRATÉGICAS
+### 5. PROPUESTAS ESTRATÉGICAS
 - **Pilar I:** Política de IED - Calidad, encadenamiento e institucionalidad
 - **Pilar II:** Competitividad exportadora
 - **Pilar III:** Inclusión financiera de la diáspora
@@ -510,7 +510,7 @@
 - Coordinación multiactor
 - Seguimiento a movilización de recursos
 - Evaluación de instrumentos financieros
-- Generación de recomendaciones estratégicas
+- Generación de propuestas estratégicas
 
 ### 3. MODELO DE MONITOREO
 - **Dimensión 1: Ejecución financiera pública**
