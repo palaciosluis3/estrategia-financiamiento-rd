@@ -4,7 +4,7 @@
 
 ### 1.1 Contexto Económico y Financiero de la República Dominicana
 
-Durante las últimas dos décadas, la economía de la dominicana ha mostrado un crecimiento constante, principalmente debido a reformas estructurales con orientación de mercado, respaldadas por medidas prudenciales de política monetaria y fiscal. Esto la ha convertido en la economía más grande de América Central y el Caribe, y la séptima economía más grande de América Latina. Esto le ha permitido alcanzar una población estimada de 11 millones de habitantes.
+Durante las últimas dos décadas, la economía de la República Dominicana ha mostrado un crecimiento constante, principalmente debido a reformas estructurales con orientación de mercado, respaldadas por medidas prudenciales de política monetaria y fiscal. Esto la ha convertido en la economía más grande de América Central y el Caribe, y la séptima economía más grande de América Latina. Esto le ha permitido alcanzar una población estimada de 11 millones de habitantes.
 
 El país está tradicionalmente divido en tres macrorregiones, cada una con características particulares. La región oriental es la zona económicamente más desarrollada del país e incluye a su capital, Santo Domingo. Esta región se caracteriza principalmente por el desarrollo de los sectores de servicios, incluyendo el turismo y el financiero, así como el sector industrial ubicado en la capital del país. Por su parte, la región del Cibao (norte) es reconocida por su productividad agrícola, particularmente en arroz, café, cacao y tabaco. Finalmente, la región sur presenta las mayores vulnerabilidades socioeconómicas, aunque con potencial para desarrollar actividades agrícolas, mineras y de energías renovables.
 

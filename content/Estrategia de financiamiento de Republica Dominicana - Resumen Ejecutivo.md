@@ -1,6 +1,6 @@
 **Estrategia de financiamiento de la República Dominicana**
 
-## 2 Resumen Ejecutivo
+## 3 Resumen Ejecutivo
 
 **Capítulo 1. Introducción y contexto del Financiamiento para el Desarrollo en la República Dominicana**
 
@@ -107,9 +107,9 @@ En cuanto a las Alianzas Público-Privadas (APP), su implementación se ve ralen
 
 Para superar estos desafíos se proponen una serie de intervenciones coordinadas:
 
-- Formalización y liquidez de MIPYMES: Reforma Integral al Código Tributario que simplifique la formalización. Asimismo, se recomienda aprobar la Ley de Factoring y crear un programa de Confirming Estatal para que los pequeños proveedores del Estado puedan monetizar sus facturas de forma inmediata bajo el riesgo soberano, aliviando su capital de trabajo.
+- Formalización y liquidez de MIPYMES: Reforma Integral al Código Tributario que simplifique la formalización. Asimismo, se propone aprobar la Ley de Factoring y crear un programa de Confirming Estatal para que los pequeños proveedores del Estado puedan monetizar sus facturas de forma inmediata bajo el riesgo soberano, aliviando su capital de trabajo.
 - Diversificación del Mercado de Capitales: Se sugiere ajustar gradualmente los límites de inversión de los fondos de pensiones para permitir una mayor exposición (entre 1% y 5%) a activos reales e infraestructura. También es fundamental implementar un Régimen Simplificado de Oferta Pública para reducir los costos de entrada a empresas medianas y adoptar los estándares NIIF S1 y S2 para atraer capital internacional bajo criterios ESG.
-- Optimización de APP y Financiamiento Mixto: Se recomienda reformar la Ley  47-20 para agilizar los tiempos de estructuración y crear un Fondo Nacional de Estudios de Preinversión que garantice la calidad técnica de los proyectos desde su origen. El uso de esquemas de Pagos por Disponibilidad (PPD) es vital para hacer bancable la infraestructura social donde las tarifas de usuario no cubren los costos.
+- Optimización de APP y Financiamiento Mixto: Se propone reformar la Ley  47-20 para agilizar los tiempos de estructuración y crear un Fondo Nacional de Estudios de Preinversión que garantice la calidad técnica de los proyectos desde su origen. El uso de esquemas de Pagos por Disponibilidad (PPD) es vital para hacer bancable la infraestructura social donde las tarifas de usuario no cubren los costos.
 - Institucionalización del Impacto: Se propone la creación de una Unidad Nacional de Inversión de Impacto para coordinar el pipeline de proyectos y elevar el límite de deducibilidad fiscal de donaciones estratégicas del 5% al 8-10%.
 
 **Capítulo 5. Financiamiento privado internacional**

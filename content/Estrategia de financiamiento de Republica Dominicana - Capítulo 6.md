@@ -24,102 +24,103 @@ Para facilitar su lectura estratégica, el Catálogo agrupa los instrumentos en 
 - **Familia III. Reducción de Riesgos y Gestión de Liquidez:** comprende mecanismos orientados a mejorar la bancabilidad de los proyectos y a asegurar disponibilidad inmediata de recursos ante eventos adversos. Comprende Garantías Parciales, Fondos de Primera Pérdida (First-loss), Seguros Paramétricos y Líneas Contingentes de desembolso rápido.
 - **Familia IV. Finanzas Mixtas y Estructuración Avanzada:** reúne soluciones de mayor sofisticación técnica y jurídica, concebidas para movilizar volúmenes significativos de capital institucional. Incluye la Titularización de activos, los Vehículos de Propósito Especial (SPV) y los Canjes de Deuda por Naturaleza.
 
-1. **Familia I: Financiamiento Temático (Use of Proceeds)**
-    - 1.1. ***Bonos Etiquetados (Verdes, Sociales, Sostenibles, Azules y de Transición)***
+**Familia I: Financiamiento Temático (Use of Proceeds)**
+
+- ***Bonos Etiquetados (Verdes, Sociales, Sostenibles, Azules y de Transición)***
 
 Estos valores de deuda permiten canalizar capital de forma estratégica hacia proyectos con beneficios ambientales o sociales verificables, resolviendo la desalineación entre las prioridades nacionales de desarrollo y el financiamiento estructurado. Su arquitectura se basa en un marco de referencia que define el uso de fondos, la selección de proyectos y sistemas de reporte con verificación externa (SPO) para mitigar el riesgo de "lavado de imagen". En el país, este instrumento cuenta con un avance sólido gracias al Marco de Referencia Soberano de 2024, la Taxonomía Verde nacional y la experiencia previa en emisiones soberanas internacionales.
 
-- 0.1. ***Fondos de Impacto***
+- ***Fondos de Impacto***
 
 Son vehículos de inversión colectiva que persiguen un impacto social o ambiental medible junto con un retorno financiero, enfrentando la dificultad de movilizar capital de largo plazo hacia modelos de negocio sostenibles por asimetrías de información. Operan mediante una tesis de inversión clara y una gobernanza que incluye comités de impacto y reglas de salida predefinidas. El país dispone de la Ley No. 249-17 para Sociedades Administradoras de Fondos de Inversión (SAFI) y ya existen precedentes locales de fondos con tesis de impacto social que facilitan su escalamiento.
 
-- 0.1. ***Financiamiento de Cadena de Suministro (Reverse Factoring / SCF)***
+- ***Financiamiento de Cadena de Suministro (Reverse Factoring / SCF)***
 
 Este mecanismo ofrece soluciones de liquidez de corto plazo al adelantar el pago a proveedores basado en facturas aprobadas por un comprador ancla sólido, resolviendo las brechas de capital de trabajo en MIPyMES que carecen de colaterales tradicionales. La arquitectura financiera permite que el proveedor solicite el anticipo y el comprador pague al financiador al vencimiento, aprovechando la calidad crediticia de la empresa grande. El país cuenta con la Ley No. 32-23 de Facturación Electrónica y los programas de factoring gubernamental de Banreservas constituyen habilitantes estructurales claves.
 
-- 0.1. ***Financiación Basada en Ingresos (Revenue-Based Financing - RBF)***
+- ***Financiación Basada en Ingresos (Revenue-Based Financing - RBF)***
 
 Se trata de un contrato donde el repago se determina como un porcentaje de los ingresos brutos futuros hasta un monto máximo, ideal para empresas con flujos variables que no desean diluir su capital. El flujo se gestiona mediante una cuenta recaudadora o pasarela de pagos que automatiza el cobro proporcional a las ventas reales. Este instrumento se ve potenciado en el país por la trazabilidad que ofrece la facturación electrónica y un ecosistema fintech en expansión capaz de procesar datos transaccionales de alta frecuencia.
 
-- 0.1. ***Líneas de Crédito Verdes / Transición***
+- ***Líneas de Crédito Verdes / Transición***
 
 Son facilidades crediticias fondeadas por capital mayorista para financiar carteras de subcréditos con beneficios ambientales, mitigando los altos costos y plazos cortos que suelen enfrentar las inversiones sostenibles. Su arquitectura requiere un sistema de gestión ambiental y social (ESMS) en los bancos y procesos de "tagging" contable para reportar el impacto del uso de los fondos. La disponibilidad de la Taxonomía Verde y los programas piloto de supervisión bancaria para riesgos ASG facilitan la implementación nacional de estas líneas por parte de la banca múltiple y BANDEX.
 
-- 0.1. ***Créditos para Economía Circular***
+- ***Créditos para Economía Circular***
 
 Este financiamiento se dirige a proyectos que reducen residuos y extienden la vida útil de los materiales, abordando la falta de métricas estandarizadas y el riesgo percibido en el sector de residuos. El modelo utiliza indicadores técnicos como toneladas desviadas o agua ahorrada para justificar el uso de fondos en infraestructura de reciclaje o compostaje. El país cuenta con la Ley No. 225-20 de Gestión de Residuos y el Plan Nacional PLANGIR 2025-2035, que definen las inversiones prioritarias para este mecanismo.
 
-- 0.1. ***Financiamiento Especializado para MiPyME***
+- ***Financiamiento Especializado para MiPyME***
 
 Son programas de crédito con condiciones diferenciadas de plazo y tasa diseñados para corregir el racionamiento de crédito hacia las pequeñas empresas debido a colaterales insuficientes. La arquitectura combina fondeo mayorista (público o multilateral) con capas de mitigación de riesgo como garantías parciales. En el contexto nacional, la institucionalidad de PROMIPYME y BANGRICOLA, junto con ferias de condiciones especiales como "Expo Fomenta Pymes", aseguran un origen masivo y estandarizado.
 
-- 0.1. ***Factoring (Invoice Factoring)***
+- ***Factoring (Invoice Factoring)***
 
 Este instrumento permite a las empresas ceder sus cuentas por cobrar a un tercero para recibir liquidez inmediata, resolviendo las tensiones de caja provocadas por plazos de cobro extendidos. La estructura financiera implica la cesión del derecho de cobro a cambio de un anticipo neto de un descuento por riesgo y plazo. El país tiene una ruta formalizada mediante la Circular Conjunta Tesorería-DGCP para el sector público y el soporte técnico del Sistema Electrónico de Garantías Mobiliarias.
 
-- 0.1. ***Leasing Tradicional / Verde***
+- ***Leasing Tradicional / Verde***
 
 Consiste en el arrendamiento financiero de activos productivos, etiquetándose como "verde" si los bienes cumplen criterios de eficiencia energética o reducción de emisiones. El arrendador mantiene la propiedad del activo mientras el usuario paga cuotas que se alinean con el ahorro operativo generado. El mercado dominicano cuenta con una normativa de arrendamiento de la Junta Monetaria y una expansión reciente liderada por entidades especializadas y la banca múltiple.
 
-- 0.1. ***Crowdfunding (Financiamiento Colectivo)***
+- ***Crowdfunding (Financiamiento Colectivo)***
 
 Es una plataforma digital que agrega pequeños aportes de múltiples inversionistas para financiar deuda o capital, reduciendo los altos costos de transacción para emprendimientos. La arquitectura segrega los fondos en cuentas de custodia hasta el éxito de la campaña y gestiona los pagos post-oferta. La Resolución R-CNMV-2025-27-MV de la Superintendencia del Mercador de Valores (SIMV) establece el marco regulatorio en el país, definiendo límites de inversión y requisitos para las plataformas autorizadas.
 
-1. **Familia II: Basados en Desempeño y Resultados (KPIs/Outcomes)**
+**Familia II: Basados en Desempeño y Resultados (KPIs/Outcomes)**
 
-- 0.1. ***Bonos Vinculados a Sostenibilidad (SLB)***
+- ***Bonos Vinculados a Sostenibilidad (SLB)***
 
 A diferencia de los bonos verdes, aquí las condiciones financieras se ajustan según el cumplimiento de metas de sostenibilidad (SPTs) del emisor, resolviendo la dificultad de valorar compromisos ambientales sin incentivos contractuales. Su arquitectura incorpora cláusulas de *step-up* o *step-down* vinculadas a un calendario de observación verificado por terceros. El país podría aprovechar su infraestructura de mercado de valores y la familiaridad reciente con marcos ASG para facilitar estas estructuras.
 
-- 0.1. ***APP con Pagos por Desempeño***
+- ***APP con Pagos por Desempeño***
 
 Son contratos de largo plazo donde la remuneración del socio privado depende de la calidad y disponibilidad verificable del servicio, alineando incentivos que las APPs tradicionales suelen obviar. La estructura financiera ajusta el pago por disponibilidad mediante una matriz de deducciones y bonificaciones basada en KPIs operativos. Se cuenta con la Ley No. 47-20 y la DGAPP, que proveen la base institucional para estructurar estos proyectos con estándares de transparencia.
 
-- 0.1. ***ESCO / Contratos de Desempeño Energético***
+- ***ESCO / Contratos de Desempeño Energético***
 
 En este modelo, una empresa de servicios energéticos implementa medidas de eficiencia y el pago se financia directamente con los ahorros reales logrados, superando la barrera del alto CAPEX inicial. La arquitectura técnica se basa en un plan de medición y verificación bajo protocolos internacionales como el IPMVP. El Decreto No. 158-23, que prioriza la eficiencia en el sector público, facilitaría la demanda para estos contratos.
 
-- 0.1. ***Préstamos Vinculados a Sostenibilidad (SLL)***
+- ***Préstamos Vinculados a Sostenibilidad (SLL)***
 
 Son créditos donde el margen de la tasa de interés varía según el prestatario cumpla con objetivos ambientales o sociales, permitiendo alinear el financiamiento con metas de sostenibilidad sin restringir el uso de fondos. El ajuste de margen ( *pricing grid* ) se gatilla tras la verificación anual de los indicadores acordados. El sistema financiero dominicano cuenta con lineamientos de la Superintendencia de Bancos sobre riesgos ASG y el soporte técnico de la Taxonomía Verde para definir estas metas.
 
-- 0.1. ***Financiamiento Basado en Resultados (RBF)***
+- ***Financiamiento Basado en Resultados (RBF)***
 
 Incluye instrumentos como bonos de impacto donde los desembolsos solo ocurren ante la verificación de resultados específicos, reduciendo la incertidumbre sobre la efectividad de los programas financiados. El inversionista privado prefinancia la intervención y el Estado solo reembolsa el capital más un retorno si se logran los objetivos. El marco de la Ley No. 189-11 de Fideicomiso permitiría administrar estos flujos con transparencia, existiendo ya precedentes en los sectores de salud y medio ambiente.
 
-1. **Familia III: Reducción de Riesgos y Gestión de Liquidez**
+**Familia III: Reducción de Riesgos y Gestión de Liquidez**
 
-- 0.1. ***Garantías Parciales / Esquemas de Reparto de Riesgos***
+- ***Garantías Parciales / Esquemas de Reparto de Riesgos***
 
 Son contratos donde un tercero asume una fracción de la pérdida crediticia, mejorando la bancabilidad de sectores estratégicos que los bancos perciben como riesgosos. La arquitectura define un porcentaje de cobertura y un tope máximo de pérdida ( *cap* ) para proteger al garante. En el país, la capacidad de crear patrimonios separados vía fiduciarias y el marco de garantías mobiliarias digitalizado facilitarían la ejecución de estos esquemas.
 
-- 0.1. ***Fondos de Primera Pérdida (First-loss)***
+- ***Fondos de Primera Pérdida (First-loss)***
 
 Esta estructura de mejora crediticia utiliza un tramo de capital subordinado (público o multilateral) para absorber las pérdidas iniciales de una cartera, protegiendo a los inversionistas. El efecto catalítico permite que cada peso de capital público movilice entre 10 y 20 pesos de capital institucional. A nivel nacional se cuenta con acceso establecido a multilaterales como el BID y el IFC, y vehículos fiduciarios regulados para operar estos fondos.
 
-- 0.1. ***Seguros Paramétricos***
+- ***Seguros Paramétricos***
 
 Son pólizas que pagan automáticamente cuando se alcanza un umbral físico medible (ej. velocidad del viento), proveyendo liquidez rápida tras desastres sin esperar peritajes de daños. La arquitectura financiera transfiere el riesgo a un *pool* o reaseguradora, gatillando el desembolso según una metodología definida ex ante. El país dispone de fuentes de datos técnicos como INDOMET e INDRHI y un marco de gestión de riesgos que permite anclar el uso de estos pagos.
 
-- 0.1. ***Líneas Contingentes ante Desastres***
+- ***Líneas Contingentes ante Desastres***
 
 Es financiamiento soberano pre-aprobado que se desembolsa inmediatamente ante una emergencia, evitando reasignaciones presupuestarias ineficientes tras un choque fiscal. La estructura define un trigger oficial (como una declaratoria de emergencia) para activar la disponibilidad de fondos con condiciones de repago suaves. Se tiene un precedente exitoso con el BID por US$300 millones, lo que demuestra la capacidad institucional para gestionar este instrumento.
 
-1. **Familia IV: Finanzas Mixtas y Estructuración Avanzada**
+**Familia IV: Finanzas Mixtas y Estructuración Avanzada**
 
-- 0.1. ***Blended Finance para Preparación de Proyectos (Project Prep)***
+- ***Blended Finance para Preparación de Proyectos (Project Prep)***
 
 Facilidades que combinan donaciones y capital recuperable para financiar estudios técnicos y legales, cerrando la "brecha de bancabilidad" de proyectos complejos. Operan mediante ventanas que reembolsan los costos de estructuración al momento de la adjudicación o cierre financiero del proyecto. El marco de la Ley No. 47-20 de APP genera una demanda natural para estas facilidades de preparación en el país.
 
-- 0.1. ***Titularización (Asset-backed)***
+- ***Titularización (Asset-backed)***
 
 Consiste en convertir flujos de caja futuros (peajes, carteras de crédito) en valores negociables emitidos por un patrimonio separado, liberando balance para los originadores. La arquitectura requiere el aislamiento jurídico del activo y una cascada de pagos que gobierne el uso de los flujos recaudados. En el país, existen sociedades titularizadoras activas y un marco de mercado de valores consolidado que permite a los fondos de pensiones invertir en estos instrumentos.
 
-- 0.1. ***Vehículos Especiales (SPV) / Estructuración de Proyectos***
+- ***Vehículos Especiales (SPV) / Estructuración de Proyectos***
 
 Es la creación de una entidad legal independiente para ejecutar un proyecto específico, aislando sus riesgos del balance de los patrocinadores o del Estado. El SPV firma todos los contratos críticos (EPC, O&amp;M) y ordena el flujo de pagos mediante cuentas controladas por un fiduciario. Las leyes de Fideicomiso y de Mercado de Valores dominicanas habilitan vehículos robustos que son esenciales para el financiamiento de infraestructura a gran escala.
 
-- 0.1. ***Canjes de Deuda por Naturaleza***
+- ***Canjes de Deuda por Naturaleza***
 
 Arreglo financiero donde se recompra deuda soberana a cambio de compromisos para destinar los ahorros generados a la conservación ambiental. La arquitectura suele incluir garantías multilaterales para la nueva deuda y un fideicomiso independiente para administrar los fondos de conservación. El país cuenta con una capacidad activa de gestión de deuda pública y activos naturales estratégicos que justifican la exploración de este mecanismo complejo.
 

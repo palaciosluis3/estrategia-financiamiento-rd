@@ -40,13 +40,13 @@ Sección 2.2. Análisis sobre la sostenibilidad de la deuda pública	95
 
 2.2.2. Esfuerzos nacionales para la sostenibilidad fiscal	105
 
-2.2.3. Implicaciones y recomendaciones para la sostenibilidad de la deuda	108
+2.2.3. Implicaciones y propuestas para la sostenibilidad de la deuda	108
 
 Sección 2.3. Sistema Nacional de Inversión Pública	113
 
 Sección 2.4. Flujos Financieros Ilícitos	130
 
-Sección 2.5. Recomendaciones clave: fortaleciendo la eficiencia fiscal	146
+Sección 2.5. Propuestas clave: fortaleciendo la eficiencia fiscal	146
 
 Capítulo 3. Finanzas públicas internacionales: motor de innovación y catalizador del desarrollo sostenible	164
 
@@ -58,7 +58,7 @@ Sección 3.2. Cooperación reembolsable y no reembolsable	181
 
 3.2.2. Marcos de cooperación relevantes de socios para el desarrollo	186
 
-3.2.3. Síntesis de hallazgos y recomendaciones estratégicas	207
+3.2.3. Síntesis de hallazgos y propuestas estratégicas	207
 
 Sección 3.3. Cooperación Sur-Sur y Triangular para el Desarrollo	213
 
@@ -72,7 +72,7 @@ Sección 3.4. Eficacia de la Cooperación Internacional para el Desarrollo	227
 
 Sección 3.5. Financiamiento Verde y Climático en la República Dominicana	244
 
-Sección 3.6. Recomendaciones clave: de la cooperación receptiva a la gestión estratégica de alianzas	264
+Sección 3.6. Propuestas clave: de la cooperación receptiva a la gestión estratégica de alianzas	264
 
 Capítulo 4. Financiamiento Privado Doméstico: Palanca de Inversión y Multiplicador del Desarrollo Sostenible	284
 
@@ -82,43 +82,35 @@ Sección 4.1. Desarrollo del sector privado y financiamiento de las MIPYMES	285
 
 4.1.2. Estrategia Nacional de Inclusión Financiera 2022-2030	296
 
-4.1.3. Recomendaciones sobre productos financieros inclusivos	303
+4.1.3. Propuestas sobre productos financieros inclusivos	303
 
-4.1.4. Recomendaciones para articular fondos de garantía y Servicios de Desarrollo Empresarial (SDE)	305
+4.1.4. Propuestas para articular fondos de garantía y Servicios de Desarrollo Empresarial (SDE)	305
 
-4.1.5. Recomendaciones para abordar el Reto del Missing Middle: Vehículos para el segmento intermedio	306
+4.1.5. Propuestas para abordar el Reto del Missing Middle: Vehículos para el segmento intermedio	306
 
 Sección 4.2. Desarrollo del Sector Financiero Doméstico y Mercados de Capitales	309
 
-4.2.1. Comparación regional de la profundización financiera y el ahorro institucional	310
+4.2.1. Implicaciones de la concentración soberana	322
 
-4.2.2. Estado actual del sector financiero doméstico y del mercado de capitales	313
+4.2.2. Principales barreras institucionales y regulatorias para la profundización del mercado de capitales	323
 
-4.2.3. Profundización financiera y asignación del ahorro	313
+4.2.3. Rol de los instrumentos alternativos de financiamiento	326
 
-4.2.4. Concentración del ahorro en deuda pública y riesgos para la profundización del mercado	318
+4.2.4. Implicaciones de política pública para la profundización del mercado de capitales	327
 
-4.2.5. Implicaciones de la concentración soberana	321
+Sección 4.3. Financiamiento Mixto y Alianzas Público-Privadas	332
 
-4.2.6. Principales barreras institucionales y regulatorias para la profundización del mercado de capitales	323
+4.3.1. Marco normativo y de políticas relacionado con el Financiamiento Mixto y las Alianzas Público-Privadas (APP)	335
 
-4.2.7. Rol de los instrumentos alternativos de financiamiento	326
-
-4.2.8. Implicaciones de política pública para la profundización del mercado de capitales	327
-
-Sección 4.3. Financiamiento Mixto y Alianzas Público-Privadas	331
-
-4.3.1. Marco normativo y de políticas relacionado con el Financiamiento Mixto y las Alianzas Público-Privadas (APP)	334
-
-4.3.2. Cartera potencial de proyectos y viabilidad de los modelos de ingresos	337
+4.3.2. Cartera potencial de proyectos y viabilidad de los modelos de ingresos	338
 
 4.3.3. Restricciones y gestión de riesgos fiscales contingentes	339
 
-4.3.4. Recomendaciones para la consolidación de instrumentos de financiamiento mixto y APP	344
+4.3.4. Propuestas para la consolidación de instrumentos de financiamiento mixto y APP	345
 
 Sección 4.4. Inversión de Impacto y Filantropía	348
 
-4.4.1. Ecosistema de filantropía e inversión de impacto	348
+4.4.1. Ecosistema de filantropía e inversión de impacto	349
 
 4.4.2. Marco legal de la filantropía y la inversión de impacto	354
 
@@ -128,33 +120,13 @@ Sección 4.4. Inversión de Impacto y Filantropía	348
 
 4.4.5. Propuestas de política pública para fortalecer el ecosistema de inversión de impacto	364
 
-Sección 4.5. Recomendaciones Clave: Movilizando el Capital Privado Doméstico hacia un Ecosistema Financiero Incluyente y Sostenible	371
-
-4.5.1. Pilar I: Ecosistema de financiamiento productivo para MIPYMES y sector privado	372
-
-4.5.2. Pilar II: Profundización del Mercado de Capitales y Movilización del Ahorro Institucional	376
-
-4.5.3. Pilar III: Consolidación del Marco Institucional de APPs y Blended Finance	378
-
-4.5.4. Pilar IV: Construcción del Ecosistema de Inversión de Impacto y Finanzas Sostenibles	382
-
-4.5.5. Conclusiones – Capítulo 4: Hacia un Ecosistema Financiero Privado que Multiplica el Desarrollo	385
+Sección 4.5. Propuestas Clave: Movilizando el Capital Privado Doméstico hacia un Ecosistema Financiero Incluyente y Sostenible	371
 
 Capítulo 5. Financiamiento Privado Internacional: Integración Global y Habilitador de Transformación Productiva	390
 
 Sección 5.1. Inversión Extranjera Directa e Integración Productiva	391
 
-5.1.1. Calidad e impacto económico de la IED: evidencia de efectos de derrame (spillovers)	398
-
-5.1.2. Recomposición de la IED: capital fresco versus reinversión de utilidades	401
-
-5.1.3. Marco de incentivos de la IED	402
-
-5.1.4. Impacto fiscal de la IED	404
-
-5.1.5. Desafíos regulatorios y de gobernanza	407
-
-5.1.6. Recomendaciones estratégicas para una política de IED orientada al desarrollo	414
+5.1.1. Propuestas estratégicas para una política de IED orientada al desarrollo	414
 
 Sección 5.2. Comercio internacional y financiamiento exportador	424
 
@@ -162,7 +134,7 @@ Sección 5.2. Comercio internacional y financiamiento exportador	424
 
 5.2.2. Restricciones a la operación comercial internacional	434
 
-5.2.3. Recomendaciones para Fortalecer el Comercio Internacional y el Rol de BANDEX	439
+5.2.3. Propuestas para Fortalecer el Comercio Internacional y el Rol de BANDEX	439
 
 Sección 5.3. Finanzas de la Diáspora y Remesas	444
 
@@ -172,53 +144,31 @@ Sección 5.3. Finanzas de la Diáspora y Remesas	444
 
 5.3.3. Ecosistema de inversión y canalización productiva de remesas	455
 
-5.3.4. Recomendaciones y Vehículos Innovadores	457
+5.3.4. Propuestas y Vehículos Innovadores	457
 
 Sección 5.4. Inversión de Impacto Internacional	463
 
-5.4.1. Diagnóstico Global y Mapeo de Actores	463
+5.4.1. Diagnóstico Global y Mapeo de Actores	464
 
-5.4.2. Posicionamiento de la República Dominicana y Marcos Regulatorios Internacionales	467
+5.4.2. Posicionamiento de la República Dominicana y Marcos Regulatorios Internacionales	468
 
-5.4.3. Recomendaciones: Habilitación, Instrumentos Catalizadores y Deuda Temática	474
+5.4.3. Restricciones Legales y de Mercado para Fortalecer la Inversión de Impacto Internacional	472
 
-Sección 5.5. Recomendaciones Clave: Convirtiendo los Flujos Privados Internacionales en Palancas de Transformación Productiva	479
+5.4.4. Propuestas: Habilitación, Instrumentos Catalizadores y Deuda Temática	475
 
-5.5.1. Pilar I: Política de Inversión Extranjera Directa – Calidad, Encadenamiento e Institucionalidad	480
+Sección 5.5. Propuestas Clave: Convirtiendo los Flujos Privados Internacionales en Palancas de Transformación Productiva	480
 
-5.5.2. Pilar II: Financiamiento del Comercio Exterior y Competitividad Exportadora	483
+Capítulo 6. Instrumentos Alternativos de Financiamiento	494
 
-5.5.3. Pilar III: Diáspora: Inclusión Financiera e Instrumentos de Inversión	485
+Capítulo 7. Gobernanza, Monitoreo y Evaluación de la Estrategia de Financiamiento para el Desarrollo	503
 
-5.5.4. Pilar IV: Inversión de Impacto Internacional, Blended Finance y Deuda Temática	487
+Sección 7.1. Arquitectura institucional del ecosistema de gobernanza	503
 
-5.5.5. Conclusiones – Capítulo 5: Integrando la Frontera Global del Capital como Socio Orgánico del Desarrollo Dominicano	489
+Sección 7.2. Funciones estratégicas del ecosistema de gobernanza	506
 
-Capítulo 6. Instrumentos Alternativos de Financiamiento	493
+Sección 7.3. Articulación con los sistemas nacionales	506
 
-Capítulo 7. Gobernanza, Monitoreo y Evaluación de la Estrategia de Financiamiento para el Desarrollo	502
-
-Sección 7.1. Arquitectura institucional del ecosistema de gobernanza	502
-
-7.1.1. Comité Directivo de Financiamiento	503
-
-7.1.2. Comité Técnico de Financiamiento	503
-
-7.1.3. Secretaría Técnica	504
-
-Sección 7.2. Funciones estratégicas del ecosistema de gobernanza	505
-
-Sección 7.3. Articulación con los sistemas nacionales	505
-
-7.3.1. Modelo de monitoreo del financiamiento para el desarrollo	506
-
-7.3.2. Rendición de cuentas y transparencia	510
-
-7.3.3. Recursos y soporte técnico	511
-
-7.3.4. Principios rectores	511
-
-Referencias	513
+Referencias	514
 
 ########### 2 Índice de Figuras
 
@@ -270,7 +220,7 @@ Referencias	513
 
 **Figura 24. Crédito interno al sector privado como proporción del PIB: comparación regional, 2014 y 2024	311**
 
-**Figura 25. Crédito total al sector privado no financiero como proporción del PIB	313**
+**Figura 25. Crédito total al sector privado no financiero como proporción del PIB	314**
 
 **Figura 26. Participación del sector público y privado en el mercado de valores dominicano, 2014-2024	315**
 
@@ -290,9 +240,9 @@ Referencias	513
 
 ########### 3 Índice de Tablas
 
-**Tabla 1. Estimaciones macroeconómicas del MFMP 2024-2028	46**
+**Tabla 1. Estimaciones macroeconómicas del MFMP 2025-2029	46**
 
-**Tabla 2. Marco Financiero Plurianual 2024-2028 (% del PIB)	47**
+**Tabla 2. Marco Financiero Plurianual 2025-2029 (% del PIB)	47**
 
 **Tabla 3. Matriz de riesgos para el financiamiento para el desarrollo	67**
 
@@ -304,21 +254,21 @@ Referencias	513
 
 **Tabla 7. Resultados de IPP: Consideraciones para estudio de Gobierno	87**
 
-**Tabla 8. Consolidación de recomendaciones sobre el financiamiento público doméstico	161**
+**Tabla 8. Consolidación de propuestas sobre el financiamiento público doméstico	161**
 
 **Tabla 9. Espacios de Coordinación del Sistema Nacional de Cooperación Internacional	171**
 
 **Tabla 10. Marco de prioridades del PNPCI	175**
 
-**Tabla 10. Agencias, Fondos y Programas (AFPs) del Sistema de Naciones Unidas en la República Dominicana	194**
+**Tabla 11. Agencias, Fondos y Programas (AFPs) del Sistema de Naciones Unidas en la República Dominicana	194**
 
-**Tabla 11. Alineación de principales cooperantes en la República Dominicana con los objetivos generales de la END	211**
+**Tabla 12. Alineación de principales cooperantes en la República Dominicana con los objetivos generales de la END	211**
 
 **Tabla 12. Catálogo Dominicano de Oferta de Cooperación Técnica	220**
 
 **Tabla 14. Iniciativas de Financiamiento Verde y Climático en la República Dominicana	249**
 
-**Tabla 14. Consolidación de recomendaciones sobre el financiamiento público internacional	281**
+**Tabla 14. Consolidación de propuestas sobre el financiamiento público internacional	281**
 
 **Tabla 15. Principales indicadores de la cartera de crédito destinada a MIPYMES (marzo-2025)	301**
 
@@ -330,7 +280,7 @@ Referencias	513
 
 **Tabla 19. Actores clave del ecosistema de filantropía e inversión de impacto en la República Dominicana	352**
 
-**Tabla 20. Consolidación de recomendaciones sobre el financiamiento privado doméstico	387**
+**Tabla 20. Consolidación de propuestas sobre el financiamiento privado doméstico	387**
 
 **Tabla 21. Principales países de origen de la IED en República Dominicana	394**
 
@@ -338,7 +288,7 @@ Referencias	513
 
 **Tabla 23. Principales instrumentos legales del régimen de incentivos a la IED en República Dominicana (Vigentes a 2025)	403**
 
-**Tabla 24. Matriz de recomendaciones estratégicas: priorización y responsabilidad institucional	422**
+**Tabla 24. Matriz de propuestas estratégicas: priorización y responsabilidad institucional	423**
 
 **Tabla 25. Balanza de Servicios 2014-2024	427**
 
@@ -348,13 +298,13 @@ Referencias	513
 
 **Tabla 28. Principales productos importados a República Dominicana, 2024	428**
 
-**Tabla 29. Principales instrumentos de incentivos al comercio internacional, en República Dominicana	432**
+**Tabla 29. Principales instrumentos de incentivos al comercio internacional	432**
 
 **Tabla 30. Costos estimados de envío de remesas hacia la República Dominicana por tipo de canal y corredores principales (2023-2025)	448**
 
 **Tabla 31. Actores internacionales de inversión de impacto y su perfil de intervención	466**
 
-**Tabla 32. Consolidación de recomendaciones sobre el financiamiento privado internacional	491**
+**Tabla 32. Consolidación de propuestas sobre el financiamiento privado internacional	491**
 
 **Índice de Recuadros**
 
@@ -376,7 +326,9 @@ Referencias	513
 
 **Recuadro 9. La ventana de oportunidad estratégica: Nearshoring y Hub Logístico Regional	442**
 
-## 1 Acrónimos y Siglas
+## 1 
+
+## 2 Acrónimos y Siglas
 
 | **ABA**          | Asociación de Bancos Múltiples de la República Dominicana                                                                                       |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
