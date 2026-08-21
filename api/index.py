@@ -17,7 +17,7 @@ logger = logging.getLogger("rag-backend")
 
 app = FastAPI(
     title="Dominican Republic Financing Strategy RAG Portal API",
-    description="Backend API handling secure Gemini 3.1 Flash-Lite integrations and document RAG processing."
+    description="Backend API handling secure Gemini 3.5 Flash-Lite integrations and document RAG processing."
 )
 
 # CORS middleware for local testing
@@ -158,8 +158,8 @@ async def chat(payload: ChatRequest):
 
     # 4. Set up Gemini client and configure request
     try:
-        # Default to gemini-3.1-flash-lite as requested by the user, or allow overriding via env
-        model_name = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite")
+        # Default to gemini-3.5-flash-lite, or allow overriding via env
+        model_name = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
         
         client = genai.Client(api_key=api_key)
         

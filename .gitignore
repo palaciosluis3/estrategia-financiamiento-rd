@@ -2,3 +2,6 @@
 run.bat
 .DS_Store
 AGENTS.md
+split_document.py
+__pycache__/
+*.py[cod]
