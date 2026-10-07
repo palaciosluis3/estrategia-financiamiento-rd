@@ -1,0 +1,15 @@
+**Estrategia de financiamiento de la República Dominicana**
+
+## Justificación
+
+La República Dominicana atraviesa un momento decisivo para su desarrollo. El país ha mantenido un importante dinamismo económico, ha fortalecido su estabilidad macroeconómica y ha definido metas ambiciosas mediante la Estrategia Nacional de Desarrollo, el Plan Nacional Plurianual del Sector Público y Meta RD 2036. Sin embargo, persisten brechas relevantes en materia de productividad, inclusión social, infraestructura, capital humano, sostenibilidad ambiental y desarrollo territorial, cuya atención requiere recursos que superan la capacidad de una sola fuente de financiamiento.
+
+El país dispone de una amplia diversidad de recursos y actores: presupuesto público, crédito del sistema financiero, mercado de valores, ahorro previsional, fondos de inversión, inversión empresarial, cooperación internacional, inversión extranjera, alianzas público-privadas y mecanismos de financiamiento sostenible. No obstante, la existencia de estas fuentes no garantiza por sí sola que los recursos se orienten de manera coordinada hacia las prioridades nacionales ni que se aprovechen plenamente sus complementariedades.
+
+En este contexto, la Estrategia de Financiamiento para el Desarrollo tiene como propósito conectar la planificación nacional con las decisiones concretas de movilización y asignación de recursos. Su función es articular las distintas fuentes disponibles, identificar las brechas de financiamiento (en la medida de lo posible), reducir duplicidades, gestionar riesgos y orientar el capital hacia las intervenciones con mayor capacidad de generar resultados económicos, sociales y ambientales.
+
+La experiencia internacional demuestra que este ejercicio puede producir resultados concretos. El PNUD reporta que las reformas impulsadas mediante Marcos Nacionales Integrados de Financiamiento en 17 países han contribuido a movilizar US$16,000 millones en nuevo financiamiento y han identificado más de US$32,000 millones adicionales con potencial de alineación hacia objetivos de desarrollo sostenible. Para la República Dominicana, la utilidad de la Estrategia no radica solamente en captar más recursos, sino en mejorar la calidad, coherencia y adicionalidad del financiamiento público y privado disponible.
+
+La Estrategia constituye, por tanto, la expresión financiera de las aspiraciones de desarrollo del país. No crea un sistema de planificación paralelo ni sustituye los instrumentos existentes; los complementa mediante una visión integrada que vincula las metas nacionales con los recursos, instrumentos, actores y mecanismos de seguimiento necesarios para hacerlas realidad.
+
+Su relevancia en el momento actual radica en que la República Dominicana no solo necesita movilizar mayores recursos, sino también mejorar la calidad, coherencia y efectividad de su financiamiento. Alcanzar las metas nacionales de desarrollo requerirá una actuación coordinada del Estado, el sector privado, el sistema financiero, el mercado de capitales, la cooperación internacional y la sociedad civil, bajo una visión compartida de largo plazo.
