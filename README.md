@@ -2,6 +2,8 @@
 
 Una aplicación web interactiva que proporciona acceso a la Estrategia de Financiamiento para el Desarrollo de la República Dominicana, con capacidades de búsqueda inteligente mediante IA.
 
+🔗 **Portal en producción:** [estrategia-financiamiento-rd.vercel.app](https://estrategia-financiamiento-rd.vercel.app/)
+
 ## 📋 Descripción del Proyecto
 
 Este proyecto es un portal RAG (Retrieval-Augmented Generation) que permite a los usuarios explorar y consultar el contenido completo de la Estrategia de Financiamiento para el Desarrollo de República Dominicana a través de una interfaz conversacional impulsada por Google Gemini AI.
@@ -39,6 +41,8 @@ Este proyecto es un portal RAG (Retrieval-Augmented Generation) que permite a lo
 ## 🚀 Despliegue en Vercel
 
 Este proyecto está configurado para desplegarse en [Vercel](https://vercel.com):
+
+**URL pública de producción:** https://estrategia-financiamiento-rd.vercel.app/
 
 1. Conecta tu repositorio a Vercel
 2. Configura la variable de entorno `GEMINI_API_KEY` con tu clave de API de Google Gemini
